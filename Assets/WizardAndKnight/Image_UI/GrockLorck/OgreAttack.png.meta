@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: c96ddb37d4948fb43b190d8cca7a4140
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1996651933541577732
+    second: OgreAttack_0
+  - first:
+      213: 4387372590256114584
+    second: OgreAttack_1
+  - first:
+      213: -7998596552935764220
+    second: OgreAttack_2
+  - first:
+      213: 3215599918848575611
+    second: OgreAttack_3
+  - first:
+      213: 7291204302861508948
+    second: OgreAttack_4
+  - first:
+      213: 5198736632436997818
+    second: OgreAttack_5
+  - first:
+      213: -2911584704181053852
+    second: OgreAttack_6
+  - first:
+      213: -2798105945686222046
+    second: OgreAttack_7
+  - first:
+      213: -3378514347843358092
+    second: OgreAttack_8
+  - first:
+      213: -4012189449169661839
+    second: OgreAttack_9
+  - first:
+      213: 4429578636583433623
+    second: OgreAttack_10
+  - first:
+      213: 2127202681867365197
+    second: OgreAttack_11
+  - first:
+      213: -8083107113596348086
+    second: OgreAttack_12
+  - first:
+      213: 8255822454667382381
+    second: OgreAttack_13
+  - first:
+      213: -3488958439975716264
+    second: OgreAttack_14
+  - first:
+      213: -5183276756792795175
+    second: OgreAttack_15
+  - first:
+      213: -7854333825362517183
+    second: OgreAttack_16
+  - first:
+      213: -5455990083245666992
+    second: OgreAttack_17
+  - first:
+      213: -1531416533794800744
+    second: OgreAttack_18
+  - first:
+      213: 1499521969542889943
+    second: OgreAttack_19
+  - first:
+      213: 9035230993558161931
+    second: OgreAttack_20
+  - first:
+      213: -4715197193668441625
+    second: OgreAttack_21
+  - first:
+      213: -4512012493905523944
+    second: OgreAttack_22
+  - first:
+      213: -1488837387610882046
+    second: OgreAttack_23
+  - first:
+      213: 1375043251132800150
+    second: OgreAttack_24
+  - first:
+      213: 8738662093454319480
+    second: OgreAttack_25
+  - first:
+      213: 4287802608063290427
+    second: OgreAttack_26
+  - first:
+      213: 2562475179790123484
+    second: OgreAttack_27
+  - first:
+      213: -7190416659325473731
+    second: OgreAttack_28
+  - first:
+      213: -7348519829279850688
+    second: OgreAttack_29
+  - first:
+      213: 8770569457350122815
+    second: OgreAttack_30
+  - first:
+      213: 4649265496877346621
+    second: OgreAttack_31
+  - first:
+      213: -7170054750926290235
+    second: OgreAttack_32
+  - first:
+      213: 2892978103468776830
+    second: OgreAttack_33
+  - first:
+      213: 7197378742319904907
+    second: OgreAttack_34
+  - first:
+      213: -8893888919449966803
+    second: OgreAttack_35
+  - first:
+      213: -1783487510940815671
+    second: OgreAttack_36
+  - first:
+      213: 965867000405557940
+    second: OgreAttack_37
+  - first:
+      213: -7470273744580789335
+    second: OgreAttack_38
+  - first:
+      213: -2196712641691940339
+    second: OgreAttack_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OgreAttack_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 4521
+        width: 475
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb482925a77a44e0800000000000000
+      internalID: -1996651933541577732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_1
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 4521
+        width: 475
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b4083202413ec30800000000000000
+      internalID: 4387372590256114584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_2
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 4521
+        width: 479
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f899040d64ff090800000000000000
+      internalID: -7998596552935764220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_3
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 4521
+        width: 484
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b788eb6d61b10ac20800000000000000
+      internalID: 3215599918848575611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_4
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 4521
+        width: 485
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4512cd8deaf8f2560800000000000000
+      internalID: 7291204302861508948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_5
+      rect:
+        serializedVersion: 2
+        x: 4329
+        y: 4521
+        width: 484
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abeb7315c6f952840800000000000000
+      internalID: 5198736632436997818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_6
+      rect:
+        serializedVersion: 2
+        x: 5178
+        y: 4521
+        width: 469
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466d3d54329f797d0800000000000000
+      internalID: -2911584704181053852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 3658
+        width: 449
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bd677a7712b29d0800000000000000
+      internalID: -2798105945686222046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_8
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 3658
+        width: 415
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4727c3cc91b1d11d0800000000000000
+      internalID: -3378514347843358092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_9
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 3658
+        width: 404
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1701ca614f6d158c0800000000000000
+      internalID: -4012189449169661839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_10
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 3658
+        width: 404
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795f6321d46097d30800000000000000
+      internalID: 4429578636583433623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_11
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3658
+        width: 399
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b66f99197558d10800000000000000
+      internalID: 2127202681867365197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_12
+      rect:
+        serializedVersion: 2
+        x: 4449
+        y: 3658
+        width: 387
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4918a408e803df80800000000000000
+      internalID: -8083107113596348086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_13
+      rect:
+        serializedVersion: 2
+        x: 5303
+        y: 3661
+        width: 367
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e842308c2929270800000000000000
+      internalID: 8255822454667382381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_14
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2798
+        width: 347
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a752db8cab49fc0800000000000000
+      internalID: -3488958439975716264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_15
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2798
+        width: 356
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df93da704d4118b0800000000000000
+      internalID: -5183276756792795175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_16
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 2801
+        width: 373
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143aee7fffccff290800000000000000
+      internalID: -7854333825362517183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_17
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 2801
+        width: 390
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d86162ded6844b0800000000000000
+      internalID: -5455990083245666992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_18
+      rect:
+        serializedVersion: 2
+        x: 3655
+        y: 2801
+        width: 401
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b300cb6c05fbae0800000000000000
+      internalID: -1531416533794800744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_19
+      rect:
+        serializedVersion: 2
+        x: 4489
+        y: 2801
+        width: 404
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d18f77594f5fc410800000000000000
+      internalID: 1499521969542889943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_20
+      rect:
+        serializedVersion: 2
+        x: 5320
+        y: 2801
+        width: 407
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a42aac7b6936d70800000000000000
+      internalID: 9035230993558161931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_21
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1941
+        width: 402
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e949717221409eb0800000000000000
+      internalID: -4715197193668441625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_22
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1941
+        width: 375
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b03aeda8c1261c0800000000000000
+      internalID: -4512012493905523944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_23
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 1944
+        width: 367
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200022fb846965be0800000000000000
+      internalID: -1488837387610882046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_24
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 1947
+        width: 397
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c91963d82251310800000000000000
+      internalID: 1375043251132800150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_25
+      rect:
+        serializedVersion: 2
+        x: 3523
+        y: 1949
+        width: 474
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f1484efd6f54970800000000000000
+      internalID: 8738662093454319480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_26
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 1955
+        width: 558
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c1b9811c5518b30800000000000000
+      internalID: 4287802608063290427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_27
+      rect:
+        serializedVersion: 2
+        x: 5084
+        y: 1952
+        width: 563
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd14525799dbf8320800000000000000
+      internalID: 2562475179790123484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_28
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1024
+        width: 515
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3caad11522863c90800000000000000
+      internalID: -7190416659325473731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_29
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 967
+        width: 443
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f3cde3620d40a90800000000000000
+      internalID: -7348519829279850688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_30
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 956
+        width: 407
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d9e37f37257b970800000000000000
+      internalID: 8770569457350122815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_31
+      rect:
+        serializedVersion: 2
+        x: 2718
+        y: 961
+        width: 415
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3faad72652858040800000000000000
+      internalID: 4649265496877346621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_32
+      rect:
+        serializedVersion: 2
+        x: 3535
+        y: 975
+        width: 432
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2cfee4139de7c90800000000000000
+      internalID: -7170054750926290235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_33
+      rect:
+        serializedVersion: 2
+        x: 4346
+        y: 995
+        width: 453
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d5d38e14ce52820800000000000000
+      internalID: 2892978103468776830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_34
+      rect:
+        serializedVersion: 2
+        x: 5161
+        y: 1024
+        width: 472
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88fce135d932e360800000000000000
+      internalID: 7197378742319904907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 201
+        width: 486
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27e66c462f829480800000000000000
+      internalID: -8893888919449966803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_36
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 224
+        width: 490
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cee601ee87cf37e0800000000000000
+      internalID: -1783487510940815671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_37
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 224
+        width: 487
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b202736be2776d00800000000000000
+      internalID: 965867000405557940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_38
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 221
+        width: 484
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abb557cb91445890800000000000000
+      internalID: -7470273744580789335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreAttack_39
+      rect:
+        serializedVersion: 2
+        x: 3495
+        y: 218
+        width: 475
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a8756bd75b381e0800000000000000
+      internalID: -2196712641691940339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 53c722ecfe3a2324f9e4fa4095bea744
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

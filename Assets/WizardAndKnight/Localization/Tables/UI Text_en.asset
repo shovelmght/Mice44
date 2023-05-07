@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 99e8957ec4e5abd4cbaddd063dc416e4, type: 2}
+  m_Metadata:
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 34037366784
+    m_Localized: Hello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261423431745536
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262080398163968
+    m_Localized: Credit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262626181971968
+    m_Localized: Option
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 263226563035136
+    m_Localized: Character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263338441900032
+    m_Localized: Level 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263613307224064
+    m_Localized: Level 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263609637208064
+    m_Localized: Level 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 389220212998144
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390185754361856
+    m_Localized: Difficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391591550844928
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 395365061296128
+    m_Localized: Hard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 395498247225344
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399210160128000
+    m_Localized: French
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399435717214208
+    m_Localized: Spanis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400649729146880
+    m_Localized: wizard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401022011375616
+    m_Localized: Knight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402938359513088
+    m_Localized: Arrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 413331731578880
+    m_Localized: score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1095064877596672
+    m_Localized: 'This game was developed by '
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0000496cdbee0000

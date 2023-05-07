@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: d64e3f526666e0647b18e0ea10d5a8cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3678561904939452671
+    second: OgreWalk_0
+  - first:
+      213: 626752877002605808
+    second: OgreWalk_1
+  - first:
+      213: 3585247402510113965
+    second: OgreWalk_2
+  - first:
+      213: -5528491636924406440
+    second: OgreWalk_3
+  - first:
+      213: -4860032747076792623
+    second: OgreWalk_4
+  - first:
+      213: 6093315929105295128
+    second: OgreWalk_5
+  - first:
+      213: 2143543767230275935
+    second: OgreWalk_6
+  - first:
+      213: 4962987823844537738
+    second: OgreWalk_7
+  - first:
+      213: -8952067760813463549
+    second: OgreWalk_8
+  - first:
+      213: -1024637310980109618
+    second: OgreWalk_9
+  - first:
+      213: -6965886328629431394
+    second: OgreWalk_10
+  - first:
+      213: -3532478611012747671
+    second: OgreWalk_11
+  - first:
+      213: 8395815561772954728
+    second: OgreWalk_12
+  - first:
+      213: -4407600639692178562
+    second: OgreWalk_13
+  - first:
+      213: -7223956569218869495
+    second: OgreWalk_14
+  - first:
+      213: -6703515210901950730
+    second: OgreWalk_15
+  - first:
+      213: -6749990991350935686
+    second: OgreWalk_16
+  - first:
+      213: -4779929043771789006
+    second: OgreWalk_17
+  - first:
+      213: 2357856531890863446
+    second: OgreWalk_18
+  - first:
+      213: -1949978514597215237
+    second: OgreWalk_19
+  - first:
+      213: 3131507317019236756
+    second: OgreWalk_20
+  - first:
+      213: 8294700754529698762
+    second: OgreWalk_21
+  - first:
+      213: 4172296521974955350
+    second: OgreWalk_22
+  - first:
+      213: -5521375035436629695
+    second: OgreWalk_23
+  - first:
+      213: 3929414575954550590
+    second: OgreWalk_24
+  - first:
+      213: 6040851944965163422
+    second: OgreWalk_25
+  - first:
+      213: -6429251554326864995
+    second: OgreWalk_26
+  - first:
+      213: 8225380330365230909
+    second: OgreWalk_27
+  - first:
+      213: 9128204869935406054
+    second: OgreWalk_28
+  - first:
+      213: -1115316553502074793
+    second: OgreWalk_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OgreWalk_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1881
+        width: 488
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107bcc3ff6f13fcc0800000000000000
+      internalID: -3678561904939452671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1881
+        width: 490
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4c1b3cb6ca2b800800000000000000
+      internalID: 626752877002605808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_2
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1881
+        width: 487
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacd182648b51c130800000000000000
+      internalID: 3585247402510113965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_3
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 1881
+        width: 486
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855276db52ad643b0800000000000000
+      internalID: -5528491636924406440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_4
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1879
+        width: 484
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dec8b157f1bd8cb0800000000000000
+      internalID: -4860032747076792623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_5
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 1879
+        width: 482
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817ec82cd8ecf8450800000000000000
+      internalID: 6093315929105295128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1421
+        width: 480
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51634603b56fbd10800000000000000
+      internalID: 2143543767230275935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_7
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1420
+        width: 478
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85b7d8712310e440800000000000000
+      internalID: 4962987823844537738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_8
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1419
+        width: 475
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308ac773dcdd3c380800000000000000
+      internalID: -8952067760813463549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_9
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1418
+        width: 471
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca4b6f5bc1c7c1f0800000000000000
+      internalID: -1024637310980109618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_10
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 1418
+        width: 469
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93fa4c7a43345f90800000000000000
+      internalID: -6965886328629431394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_11
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 1416
+        width: 465
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e7bed4b6d1afec0800000000000000
+      internalID: -3532478611012747671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 960
+        width: 464
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8647c2f35cde38470800000000000000
+      internalID: 8395815561772954728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_13
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 960
+        width: 461
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bfc57129e05d2c0800000000000000
+      internalID: -4407600639692178562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_14
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 960
+        width: 462
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9071cd246c95fbb90800000000000000
+      internalID: -7223956569218869495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_15
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 958
+        width: 460
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fee2c3be6458f2a0800000000000000
+      internalID: -6703515210901950730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_16
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 960
+        width: 459
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fc073d4f63352a0800000000000000
+      internalID: -6749990991350935686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_17
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 960
+        width: 462
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231f86e1cd74aadb0800000000000000
+      internalID: -4779929043771789006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 504
+        width: 464
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d70b6f50ac8b020800000000000000
+      internalID: 2357856531890863446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_19
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 504
+        width: 465
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf30ac55fd840f4e0800000000000000
+      internalID: -1949978514597215237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_20
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 506
+        width: 467
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499d77a3059557b20800000000000000
+      internalID: 3131507317019236756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_21
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 506
+        width: 471
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac348e79362bc1370800000000000000
+      internalID: 8294700754529698762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_22
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 507
+        width: 474
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d3ae9b499f6e930800000000000000
+      internalID: 4172296521974955350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_23
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 508
+        width: 478
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1410715a8a22063b0800000000000000
+      internalID: -5521375035436629695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 53
+        width: 480
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f5307ecb5188630800000000000000
+      internalID: 3929414575954550590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_25
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 55
+        width: 482
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99406096da65d350800000000000000
+      internalID: 6040851944965163422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_26
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 55
+        width: 484
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b18b466c5b6c6a0800000000000000
+      internalID: -6429251554326864995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_27
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 57
+        width: 486
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f97ed94db662270800000000000000
+      internalID: 8225380330365230909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_28
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 57
+        width: 486
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb9d7547f5edae70800000000000000
+      internalID: 9128204869935406054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OgreWalk_29
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 57
+        width: 488
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7585568f0899580f0800000000000000
+      internalID: -1115316553502074793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a36c5c858c116ac4192c57456be65b24
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

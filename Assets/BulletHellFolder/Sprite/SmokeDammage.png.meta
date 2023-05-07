@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: dbc9f4cc61abd764fb6acb6163cd8c37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4700470514940887082
+    second: SmokeDammage_0
+  - first:
+      213: 6748516820106906070
+    second: SmokeDammage_1
+  - first:
+      213: 8027469510947298467
+    second: SmokeDammage_2
+  - first:
+      213: -5335756767177639018
+    second: SmokeDammage_3
+  - first:
+      213: 7855785054853331914
+    second: SmokeDammage_4
+  - first:
+      213: 8536953782209492006
+    second: SmokeDammage_5
+  - first:
+      213: 8874843058137850904
+    second: SmokeDammage_6
+  - first:
+      213: -1980043249169812283
+    second: SmokeDammage_8
+  - first:
+      213: -8599710588104418948
+    second: SmokeDammage_16
+  - first:
+      213: 7668909738592886624
+    second: SmokeDammage_18
+  - first:
+      213: -2964369695136135346
+    second: SmokeDammage_19
+  - first:
+      213: 3814288062824513123
+    second: SmokeDammage_20
+  - first:
+      213: 1295316651517399313
+    second: SmokeDammage_21
+  - first:
+      213: 6492037977805141112
+    second: SmokeDammage_22
+  - first:
+      213: -8951552412196901520
+    second: SmokeDammage_23
+  - first:
+      213: 4148677288336323018
+    second: SmokeDammage_24
+  - first:
+      213: 8303549803934736517
+    second: SmokeDammage_27
+  - first:
+      213: -3158936407169445444
+    second: SmokeDammage_28
+  - first:
+      213: 8862257758314510417
+    second: SmokeDammage_30
+  - first:
+      213: 6689719078045068156
+    second: SmokeDammage_32
+  - first:
+      213: -6931820239690698196
+    second: SmokeDammage_33
+  - first:
+      213: 8835748259391164337
+    second: SmokeDammage_34
+  - first:
+      213: 6354193620247721961
+    second: SmokeDammage_35
+  - first:
+      213: -2219812650256795566
+    second: SmokeDammage_36
+  - first:
+      213: 8872953611585643625
+    second: SmokeDammage_39
+  - first:
+      213: 7149816914296893222
+    second: SmokeDammage_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmokeDammage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20cf38770d6b3140800000000000000
+      internalID: 4700470514940887082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9883fea4c87ad50800000000000000
+      internalID: 6748516820106906070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acda452dfc476f60800000000000000
+      internalID: 8027469510947298467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b7d748d7593f5b0800000000000000
+      internalID: -5335756767177639018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbfa5ab2ea550d60800000000000000
+      internalID: 7855785054853331914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6243684fb3a597670800000000000000
+      internalID: 8536953782209492006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814e5ad8db6c92b70800000000000000
+      internalID: 8874843058137850904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_8
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 510
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4b255d7297584e0800000000000000
+      internalID: -1980043249169812283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79ded888c0b7a880800000000000000
+      internalID: -8599710588104418948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fdc5f86c07d6a60800000000000000
+      internalID: 7668909738592886624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e474a7ad7717cd6d0800000000000000
+      internalID: -2964369695136135346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36efaafb8c21fe430800000000000000
+      internalID: 3814288062824513123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111d755b1a3e9f110800000000000000
+      internalID: 1295316651517399313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874bb6ff42a581a50800000000000000
+      internalID: 6492037977805141112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_23
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d66ba2282b5c380800000000000000
+      internalID: -8951552412196901520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_24
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 382
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1740b5300139930800000000000000
+      internalID: 4148677288336323018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5806b467d822c3370800000000000000
+      internalID: 8303549803934736517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1dd9e03143924d0800000000000000
+      internalID: -3158936407169445444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_30
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15839481a701dfa70800000000000000
+      internalID: 8862257758314510417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ba70ece08a6dc50800000000000000
+      internalID: 6689719078045068156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_33
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c227f56e73a3dcf90800000000000000
+      internalID: -6931820239690698196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_34
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf49c56a32ee9a70800000000000000
+      internalID: 8835748259391164337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e73be08e61ae2850800000000000000
+      internalID: 6354193620247721961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_36
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2587689d724a131e0800000000000000
+      internalID: -2219812650256795566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964e41f7c40132b70800000000000000
+      internalID: 8872953611585643625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDammage_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62feeb92a90493360800000000000000
+      internalID: 7149816914296893222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1ce4428d63428964eb8e5760aed4c13f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

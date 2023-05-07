@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Text Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI Text
+  m_TableCollectionNameGuidString: 99e8957ec4e5abd4cbaddd063dc416e4
+  m_Entries:
+  - m_Id: 34037366784
+    m_Key: Text UI Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 261423431745536
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262080398163968
+    m_Key: Credit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 262626181971968
+    m_Key: Option
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263226563035136
+    m_Key: character
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263338441900032
+    m_Key: Level 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263609637208064
+    m_Key: Level 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263613307224064
+    m_Key: Level 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 389220212998144
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390185754361856
+    m_Key: Difficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 391591550844928
+    m_Key: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 395365061296128
+    m_Key: Hard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 395498247225344
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399210160128000
+    m_Key: French
+    m_Metadata:
+      m_Items: []
+  - m_Id: 399435717214208
+    m_Key: Spanis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400649729146880
+    m_Key: Wizard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401022011375616
+    m_Key: Knight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402938359513088
+    m_Key: Arrow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 413331731578880
+    m_Key: score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1095064877596672
+    m_Key: 'This game was developed by '
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1620617082823

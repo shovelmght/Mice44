@@ -1,0 +1,2136 @@
+fileFormatVersion: 2
+guid: 4783a162f530e5841b1952d467943e7e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2242861848691213152
+    second: SmokeDam_0
+  - first:
+      213: 1012182076261785442
+    second: SmokeDam_1
+  - first:
+      213: -2239353740129578958
+    second: SmokeDam_2
+  - first:
+      213: 4963120901655607139
+    second: SmokeDam_3
+  - first:
+      213: -7461749625622711819
+    second: SmokeDam_4
+  - first:
+      213: -6685795444780477933
+    second: SmokeDam_5
+  - first:
+      213: 104863997795378034
+    second: SmokeDam_6
+  - first:
+      213: -2949483239414786709
+    second: SmokeDam_7
+  - first:
+      213: 7032786582163466897
+    second: SmokeDam_8
+  - first:
+      213: 8277535164288341627
+    second: SmokeDam_9
+  - first:
+      213: 6464655559093869762
+    second: SmokeDam_10
+  - first:
+      213: 5517514118992437641
+    second: SmokeDam_11
+  - first:
+      213: 1082484561976325908
+    second: SmokeDam_12
+  - first:
+      213: -6193260795570740968
+    second: SmokeDam_13
+  - first:
+      213: -5725565766243094889
+    second: SmokeDam_14
+  - first:
+      213: -2431289455067216517
+    second: SmokeDam_15
+  - first:
+      213: 7313538974375688788
+    second: SmokeDam_16
+  - first:
+      213: 7174363463628319163
+    second: SmokeDam_17
+  - first:
+      213: 5373313253091406279
+    second: SmokeDam_18
+  - first:
+      213: 8859812373716140088
+    second: SmokeDam_19
+  - first:
+      213: -2367869463477778167
+    second: SmokeDam_20
+  - first:
+      213: -3335261068838802287
+    second: SmokeDam_21
+  - first:
+      213: -2800875700893090547
+    second: SmokeDam_22
+  - first:
+      213: -6478351562651833453
+    second: SmokeDam_23
+  - first:
+      213: -4260918169372411219
+    second: SmokeDam_24
+  - first:
+      213: 4936555891027164333
+    second: SmokeDam_25
+  - first:
+      213: 4395808849755041013
+    second: SmokeDam_26
+  - first:
+      213: 891077176995434412
+    second: SmokeDam_27
+  - first:
+      213: -1879906226377179244
+    second: SmokeDam_28
+  - first:
+      213: -8987451937697066667
+    second: SmokeDam_29
+  - first:
+      213: -4967161916817760741
+    second: SmokeDam_30
+  - first:
+      213: 7505868689223499450
+    second: SmokeDam_31
+  - first:
+      213: 2841272502012995412
+    second: SmokeDam_32
+  - first:
+      213: 6450866439833143420
+    second: SmokeDam_33
+  - first:
+      213: 3019942458219909304
+    second: SmokeDam_34
+  - first:
+      213: 8085663225486257023
+    second: SmokeDam_35
+  - first:
+      213: -6453926982783551743
+    second: SmokeDam_36
+  - first:
+      213: -7205172653255739290
+    second: SmokeDam_37
+  - first:
+      213: 7492444888504447922
+    second: SmokeDam_38
+  - first:
+      213: -6548870584958515416
+    second: SmokeDam_39
+  - first:
+      213: 4677424433055916166
+    second: SmokeDam_40
+  - first:
+      213: -4379685319920326122
+    second: SmokeDam_41
+  - first:
+      213: 5280667656696990766
+    second: SmokeDam_42
+  - first:
+      213: -3432447147270006111
+    second: SmokeDam_43
+  - first:
+      213: 9129229997116685540
+    second: SmokeDam_44
+  - first:
+      213: 3739946221822040381
+    second: SmokeDam_45
+  - first:
+      213: -9038499849932917404
+    second: SmokeDam_46
+  - first:
+      213: 8379364548416090891
+    second: SmokeDam_47
+  - first:
+      213: -498319147007973841
+    second: SmokeDam_48
+  - first:
+      213: -2532551418807966713
+    second: SmokeDam_49
+  - first:
+      213: -975854078171265561
+    second: SmokeDam_50
+  - first:
+      213: -5314656704484212811
+    second: SmokeDam_51
+  - first:
+      213: -3418781348432104062
+    second: SmokeDam_52
+  - first:
+      213: -7472326120767732117
+    second: SmokeDam_53
+  - first:
+      213: 4309296459672330207
+    second: SmokeDam_54
+  - first:
+      213: -5308239025169353926
+    second: SmokeDam_55
+  - first:
+      213: 5309721071433477865
+    second: SmokeDam_56
+  - first:
+      213: 8621113621530253721
+    second: SmokeDam_57
+  - first:
+      213: 762297286546096994
+    second: SmokeDam_58
+  - first:
+      213: 5105476742766281057
+    second: SmokeDam_59
+  - first:
+      213: -6281807113761462563
+    second: SmokeDam_60
+  - first:
+      213: -510658148422015542
+    second: SmokeDam_61
+  - first:
+      213: 5453135042874211376
+    second: SmokeDam_62
+  - first:
+      213: 8288640650746011531
+    second: SmokeDam_63
+  - first:
+      213: 3418397526971501144
+    second: SmokeDam_64
+  - first:
+      213: 1175419764476303088
+    second: SmokeDam_65
+  - first:
+      213: -5274002619725288811
+    second: SmokeDam_66
+  - first:
+      213: 8081330149046522803
+    second: SmokeDam_67
+  - first:
+      213: 885728392616008169
+    second: SmokeDam_68
+  - first:
+      213: 2565748577094859317
+    second: SmokeDam_69
+  - first:
+      213: 227672274162590310
+    second: SmokeDam_70
+  - first:
+      213: 1394232481014990742
+    second: SmokeDam_71
+  - first:
+      213: -7997199275425818068
+    second: SmokeDam_72
+  - first:
+      213: -2622601756031920759
+    second: SmokeDam_73
+  - first:
+      213: 2007086817401736617
+    second: SmokeDam_74
+  - first:
+      213: 3540000836003842065
+    second: SmokeDam_75
+  - first:
+      213: 6699142964926966692
+    second: SmokeDam_76
+  - first:
+      213: 6725759251986936489
+    second: SmokeDam_77
+  - first:
+      213: -2496266631446549766
+    second: SmokeDam_78
+  - first:
+      213: -3165179954461005651
+    second: SmokeDam_79
+  - first:
+      213: 6887333560565532397
+    second: SmokeDam_80
+  - first:
+      213: -107535045467682687
+    second: SmokeDam_81
+  - first:
+      213: 4939309263359477226
+    second: SmokeDam_82
+  - first:
+      213: -1879662262221501573
+    second: SmokeDam_83
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmokeDam_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acfb742801cfd0e0800000000000000
+      internalID: -2242861848691213152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_1
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fd99f4c3efb0e00800000000000000
+      internalID: 1012182076261785442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_2
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230522153a73ce0e0800000000000000
+      internalID: -2239353740129578958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_3
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367bf701a2c80e440800000000000000
+      internalID: 4963120901655607139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_4
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1bad1ef3a827890800000000000000
+      internalID: -7461749625622711819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_5
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3125fe047784733a0800000000000000
+      internalID: -6685795444780477933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_6
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273225a104d847100800000000000000
+      internalID: 104863997795378034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_7
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6596bbee945117d0800000000000000
+      internalID: -2949483239414786709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_8
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19aacfa922a799160800000000000000
+      internalID: 7032786582163466897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_9
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76163b2066bfd270800000000000000
+      internalID: 8277535164288341627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_10
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc5b03daf117b950800000000000000
+      internalID: 6464655559093869762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_11
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 1722
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9812fb1bbd5229c40800000000000000
+      internalID: 5517514118992437641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417717f49f1c50f00800000000000000
+      internalID: 1082484561976325908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_13
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81127a6ae1e1d0aa0800000000000000
+      internalID: -6193260795570740968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_14
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e61fc5544ba80b0800000000000000
+      internalID: -5725565766243094889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_15
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c0944f13524ed0800000000000000
+      internalID: -2431289455067216517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_16
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a33aac2f8ee7560800000000000000
+      internalID: 7313538974375688788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_17
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb96b1b0f85709360800000000000000
+      internalID: 7174363463628319163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_18
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c179654fe7d19a40800000000000000
+      internalID: 5373313253091406279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_19
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83006ff996064fa70800000000000000
+      internalID: 8859812373716140088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_20
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90989eab443a32fd0800000000000000
+      internalID: -2367869463477778167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_21
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c6ca69ab5c6b1d0800000000000000
+      internalID: -3335261068838802287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_22
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d7e34c36a4129d0800000000000000
+      internalID: -2800875700893090547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_23
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 1443
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b6a0ad3954816a0800000000000000
+      internalID: -6478351562651833453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daabc81108d2ed4c0800000000000000
+      internalID: -4260918169372411219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_25
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac398a8d6b228440800000000000000
+      internalID: 4936555891027164333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_26
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcea2edbdc010d30800000000000000
+      internalID: 4395808849755041013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_27
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf454aa8fdbd5c00800000000000000
+      internalID: 891077176995434412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_28
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f3ebd4f3b39e5e0800000000000000
+      internalID: -1879906226377179244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_29
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5519ba98418264380800000000000000
+      internalID: -8987451937697066667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_30
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e9a36cd88111bb0800000000000000
+      internalID: -4967161916817760741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_31
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abeb4e71ec33a2860800000000000000
+      internalID: 7505868689223499450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_32
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457e190794a3e6720800000000000000
+      internalID: 2841272502012995412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_33
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c784ebf49d4168950800000000000000
+      internalID: 6450866439833143420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_34
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b051585aadf8e920800000000000000
+      internalID: 3019942458219909304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_35
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 1164
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b2c882ddb063070800000000000000
+      internalID: 8085663225486257023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107b0e08a9b0f66a0800000000000000
+      internalID: -6453926982783551743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_37
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668355185a5120c90800000000000000
+      internalID: -7205172653255739290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_38
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3bf7eede28af760800000000000000
+      internalID: 7492444888504447922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_39
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8270b8f76ecbd15a0800000000000000
+      internalID: -6548870584958515416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_40
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680e7046dbc89e040800000000000000
+      internalID: 4677424433055916166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_41
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ae726f76b3833c0800000000000000
+      internalID: -4379685319920326122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_42
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c815e6143b84940800000000000000
+      internalID: 5280667656696990766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_43
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa1ba4618f7d50d0800000000000000
+      internalID: -3432447147270006111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_44
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecfafa405a81be70800000000000000
+      internalID: 9129229997116685540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_45
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3954ce0645f6e330800000000000000
+      internalID: 3739946221822040381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_46
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465b356464cc09280800000000000000
+      internalID: -9038499849932917404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_47
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 885
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03b7d739ab794470800000000000000
+      internalID: 8379364548416090891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2660d1406d9519f0800000000000000
+      internalID: -498319147007973841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_49
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7042a8217e19adcd0800000000000000
+      internalID: -2532551418807966713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_50
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e54cfdd2e11572f0800000000000000
+      internalID: -975854078171265561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_51
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bff112b2eb8e36b0800000000000000
+      internalID: -5314656704484212811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_52
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28539f12a7c0e80d0800000000000000
+      internalID: -3418781348432104062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_53
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6644c5bbf6fc4890800000000000000
+      internalID: -7472326120767732117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_54
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf1e966c42bdcb30800000000000000
+      internalID: 4309296459672330207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_55
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a333ae91bb85556b0800000000000000
+      internalID: -5308239025169353926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_56
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eee23fae2befa940800000000000000
+      internalID: 5309721071433477865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_57
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9999793892954a770800000000000000
+      internalID: 8621113621530253721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_58
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26303d1e759349a00800000000000000
+      internalID: 762297286546096994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_59
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 606
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1614a9d2c0c4ad640800000000000000
+      internalID: 5105476742766281057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6e9b466b982d8a0800000000000000
+      internalID: -6281807113761462563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_61
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5a5ad9e17c9e8f0800000000000000
+      internalID: -510658148422015542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_62
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c70c6fd6d6dab40800000000000000
+      internalID: 5453135042874211376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_63
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f149ab1ca270370800000000000000
+      internalID: 8288640650746011531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_64
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ac5387076907f20800000000000000
+      internalID: 3418397526971501144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_65
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f655935c0eef4010800000000000000
+      internalID: 1175419764476303088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_66
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a6bca6f8afec6b0800000000000000
+      internalID: -5274002619725288811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_67
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3929e24f6a62070800000000000000
+      internalID: 8081330149046522803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_68
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9da51c74dba4c00800000000000000
+      internalID: 885728392616008169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_69
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53af3b8acbe5b9320800000000000000
+      internalID: 2565748577094859317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_70
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662aaa22abad82300800000000000000
+      internalID: 227672274162590310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_71
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 327
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697c535fd0f495310800000000000000
+      internalID: 1394232481014990742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a9b3641ad340190800000000000000
+      internalID: -7997199275425818068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_73
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985d6681995aa9bd0800000000000000
+      internalID: -2622601756031920759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_74
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad899093da9adb10800000000000000
+      internalID: 2007086817401736617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_75
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118489e210c902130800000000000000
+      internalID: 3540000836003842065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_76
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab6704780328fc50800000000000000
+      internalID: 6699142964926966692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_77
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a27a73b762b65d50800000000000000
+      internalID: 6725759251986936489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_78
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaa7f779ba7b5dd0800000000000000
+      internalID: -2496266631446549766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_79
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da82a2ce9950314d0800000000000000
+      internalID: -3165179954461005651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_80
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de68227f169b49f50800000000000000
+      internalID: 6887333560565532397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_81
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1884ef52275f18ef0800000000000000
+      internalID: -107535045467682687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_82
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5865efa93fb8440800000000000000
+      internalID: 4939309263359477226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmokeDam_83
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 48
+        width: 341
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b8492a1291ae5e0800000000000000
+      internalID: -1879662262221501573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 321c70501b4cb44408fbc6c76cfd53c5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

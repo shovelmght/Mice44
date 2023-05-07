@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 71179600af166e346b1444535818a112
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4343254247212653518
+    second: player-2-soul-togetherextralife2222_0
+  - first:
+      213: -5112494337975358804
+    second: player-2-soul-togetherextralife2222_1
+  - first:
+      213: 3466482978227251299
+    second: player-2-soul-togetherextralife2222_2
+  - first:
+      213: 3867841293597196912
+    second: player-2-soul-togetherextralife2222_3
+  - first:
+      213: 7721086675507148980
+    second: player-2-soul-togetherextralife2222_4
+  - first:
+      213: 2814382616672134426
+    second: player-2-soul-togetherextralife2222_5
+  - first:
+      213: -3311896465010726675
+    second: player-2-soul-togetherextralife2222_6
+  - first:
+      213: 219007912107030418
+    second: player-2-soul-togetherextralife2222_7
+  - first:
+      213: -3417989010263105032
+    second: player-2-soul-togetherextralife2222_8
+  - first:
+      213: 2508524109607439918
+    second: player-2-soul-togetherextralife2222_9
+  - first:
+      213: 705799762047584013
+    second: player-2-soul-togetherextralife2222_10
+  - first:
+      213: -1848695627888472932
+    second: player-2-soul-togetherextralife2222_11
+  - first:
+      213: 4848183266103970746
+    second: player-2-soul-togetherextralife2222_12
+  - first:
+      213: 5390126588602574929
+    second: player-2-soul-togetherextralife2222_13
+  - first:
+      213: -8353862927622282399
+    second: player-2-soul-togetherextralife2222_14
+  - first:
+      213: 6073041885965931991
+    second: player-2-soul-togetherextralife2222_15
+  - first:
+      213: 6004066391782473945
+    second: player-2-soul-togetherextralife2222_16
+  - first:
+      213: -142419528379020044
+    second: player-2-soul-togetherextralife2222_17
+  - first:
+      213: -428759663424398708
+    second: player-2-soul-togetherextralife2222_18
+  - first:
+      213: -6023134909892749520
+    second: player-2-soul-togetherextralife2222_19
+  - first:
+      213: -7822395961924446714
+    second: player-2-soul-togetherextralife2222_20
+  - first:
+      213: 58786333288622325
+    second: player-2-soul-togetherextralife2222_21
+  - first:
+      213: -7059294716756672028
+    second: player-2-soul-togetherextralife2222_22
+  - first:
+      213: -5518083730642440802
+    second: player-2-soul-togetherextralife2222_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb115ee9b6564c30800000000000000
+      internalID: 4343254247212653518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa68cc9c75cc09b0800000000000000
+      internalID: -5112494337975358804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3686c2907eb6b1030800000000000000
+      internalID: 3466482978227251299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072c270f9255da530800000000000000
+      internalID: 3867841293597196912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8fa9d5c6fc62b60800000000000000
+      internalID: 7721086675507148980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15e6c02412be0720800000000000000
+      internalID: 2814382616672134426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8e92656b7c902d0800000000000000
+      internalID: -3311896465010726675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297b32429821a0300800000000000000
+      internalID: 219007912107030418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1241dba1dd090d0800000000000000
+      internalID: -3417989010263105032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e87af036110d220800000000000000
+      internalID: 2508524109607439918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07c663e4218bc900800000000000000
+      internalID: 705799762047584013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cc3e90f1d1856e0800000000000000
+      internalID: -1848695627888472932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbce166ef4384340800000000000000
+      internalID: 4848183266103970746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1586b0003939dca40800000000000000
+      internalID: 5390126588602574929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163e4c09ded111c80800000000000000
+      internalID: -8353862927622282399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5511f3b67c74450800000000000000
+      internalID: 6073041885965931991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d04e0a829ab25350800000000000000
+      internalID: 6004066391782473945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcc3e98136060ef0800000000000000
+      internalID: -142419528379020044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a92979b5dbc0af0800000000000000
+      internalID: -428759663424398708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 37
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037969d16b6896ca0800000000000000
+      internalID: -6023134909892749520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6061b054154417390800000000000000
+      internalID: -7822395961924446714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8e051dbd9d0d000800000000000000
+      internalID: 58786333288622325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e14dea5bd8580e90800000000000000
+      internalID: -7059294716756672028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-2-soul-togetherextralife2222_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 5
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9de1324514db63b0800000000000000
+      internalID: -5518083730642440802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
