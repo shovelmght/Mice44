@@ -25,7 +25,7 @@ public class PlayerPrefBulletHell : MonoBehaviour
                 PlayerPrefs.SetString("name1Bullet", texBox.text);
                 PlayerPrefs.SetString("ScoreBullet", gamemanager.GetScore().ToString());
             }
-            else if (gamemanager.GetScore() > Convert.ToInt32(PlayerPrefs.GetString("Score")))
+            else if (gamemanager.GetScore() > Convert.ToInt32(PlayerPrefs.GetString("ScoreBullet")))
             {
                 PlayerPrefs.SetString("name1Bullet", texBox.text);
                 PlayerPrefs.SetString("ScoreBullet", gamemanager.GetScore().ToString());
