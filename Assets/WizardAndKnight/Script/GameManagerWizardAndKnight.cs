@@ -38,7 +38,7 @@ public class GameManagerWizardAndKnight : MonoBehaviour
 
     private void Awake()
     {
-          MakeSingleton();
+        MakeSingleton();
     }
 
 
@@ -58,7 +58,7 @@ public class GameManagerWizardAndKnight : MonoBehaviour
         StartCoroutine(LoadingScene.LoadYourAsyncScene("MenuScene", ""));       // Load main menu scene 
         fade = GameObject.FindObjectOfType<FadeWizardAndKnight>();        // get fade black scrren
         lifeBar = GameObject.FindObjectOfType<HUDScoreLife>(); // Get ref to life UI 
-        
+        SetterLanguage(language.ENG);
     }
 
 

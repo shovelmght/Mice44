@@ -14,6 +14,8 @@ public class ChestOpener : MonoBehaviour
     private GameObject chestClose;    // ref to  close chest
     private GameObject chestOpen;    // ref to open chest
 
+    public int _Deep;
+
 
 
     void Start()
@@ -66,11 +68,16 @@ public class ChestOpener : MonoBehaviour
         }
     }
 
+    private bool _DoOnce;
 
     //Event Open chest
     public void OpenChest()
     {
-        MusicManagerWizard.instance.FadeOut();
+        if (_DoOnce) {return;}
+
+        _DoOnce = true;
+
+    MusicManagerWizard.instance.FadeOut();
         StartCoroutine(uI.Lerp());         //Make animation of UI
 
         chestClose.GetComponent<Renderer>().enabled = false;      // make chest close invisible 

@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     private float forceJump = 300;       // force of jump
     [SerializeField]
     private float normalGravity = 1.5f;
+    
+    [SerializeField]
+    private float _CanJumpDelayTime = 0.5f; 
 
 
     [SerializeField]
@@ -56,20 +59,47 @@ public class PlayerController : MonoBehaviour
     private bool canOpenChest;      // check if he can press button for open chest
     private bool rotate;            // for active movement rotate for action button
     private bool IsInvulnerable;
+    
+    
+    private bool _JumpImput;
+    private bool _FireImput;
+    private bool _EnterCaveImput;
+    private float MovementInput;
+    public int _CurrentDeep;
 
-
+    protected NewActionInputManager playerInput;
     private Transform transProjectil;    //position spawn projectil
-    private Rigidbody2D rb;              // ref to Rigidbody2D
+    public Rigidbody2D rb;              // ref to Rigidbody2D
     public ChestOpener chestOpener;      // ref to chest
 
 
 
     private InputManagerWizardAndKnight input = new InputManagerWizardAndKnight();
 
+    
+    private void Awake()
+    {
+        playerInput = new NewActionInputManager();
+    }
+    
+    public void OnEnable()
+    {
+        playerInput.Enable();
+    }
+    public void OnDisable()
+    {
+        playerInput.Disable();
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
-       
+        Debug.Log("_CurrentDeep =  " + _CurrentDeep);
+        _CurrentDeep = 0;
+        playerInput.WizardAndKnight.Action.performed  += _ => SetFireOn();
+        playerInput.WizardAndKnight.Action.canceled  += _ => SetFireOff();
+        playerInput.WizardAndKnight.Fire.performed  += _ => SetJumpOn();
+        playerInput.WizardAndKnight.Fire.canceled  += _ => SetJumpOff();
      
         if (GameManagerWizardAndKnight.instance.GetterIsArrowInputManager())  // Chek if player is knight
         {
@@ -90,8 +120,41 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        bool fireInpute;
+        bool jumpImput;
+        
+        MovementInput = playerInput.WizardAndKnight.MoveX.ReadValue<float>();
+        
+        _EnterCaveImput = playerInput.WizardAndKnight.MoveY.ReadValue<float>() > 0;
+
+        jumpImput = _JumpImput;
+        if (!jumpImput)
+        {
+            jumpImput = input.Jump();
+        }
+
+        fireInpute = _FireImput;
+        if (!fireInpute)
+        {
+            fireInpute = input.ShootProjectil();
+        }
+        
+
+        bool wantsMoveRight = input.WantsMoveRight();
+        bool wantsMoveLeft = input.WantsMoveLeft();
+
+        if (MovementInput > 0)
+        {
+            wantsMoveRight = true;
+        }
+        else if(MovementInput < 0)
+        {
+            wantsMoveLeft = true;
+        }
+        
         //  Move right / D
-        if (input.WantsMoveRight() && !canShoot && !die )           
+        if (wantsMoveRight && !canShoot && !die && _CanMove)           
         {
             if (right)
             {
@@ -117,9 +180,9 @@ public class PlayerController : MonoBehaviour
         }
 
        //  Move right / A
-        else if (input.WantsMoveLeft() && !canShoot && !die)            
+        else if (wantsMoveLeft && !canShoot && !die && _CanMove)            
         {
-            if (!right)
+            if (!right )
             {
 
                 transform.localRotation = Quaternion.Euler(0, 0, 0);   // change side of player for he look left
@@ -157,8 +220,10 @@ public class PlayerController : MonoBehaviour
         }
 
         //  Jump
-        if (input.Jump() && canJump && !canShoot && !die)     
+        if (jumpImput && canJump && !canShoot && !die && currentDelayGravityChange == 0 && _CanJumpDelay && !inputEntercave && _CanMove)
         {
+            _CanJumpDelay = false;
+            Invoke(nameof(CanJumpDelay), _CanJumpDelayTime);
             rb.gravityScale = normalGravity;
             rb.AddForce(new Vector2(0, forceJump), ForceMode2D.Force);  // make jump
             jump = true;                // set bool jump for animator
@@ -167,7 +232,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Delay for change gravity
-        if (jump)
+        if (jump && !inputEntercave)
         {
 
             // Delay for change gravity
@@ -184,13 +249,13 @@ public class PlayerController : MonoBehaviour
         }
 
         // shoot projectil
-        if (input.ShootProjectil() && !canShoot  && !die)
+        if (fireInpute && !canShoot  && !die && !inputEntercave && _CanMove)
         {
             canShoot = true;    // active delay for animation attack 
         }
 
         // delay for animation attack
-        if (canShoot)
+        if (canShoot && !inputEntercave)
         {
             // Instantiate projectil while animation attack
             if (currentDelayPro > delayProjectilEnd && currentDelayPro < delayProjectilEnd * 2)
@@ -217,7 +282,12 @@ public class PlayerController : MonoBehaviour
             currentDelayPro += Time.deltaTime;     // add time to timer
         }
 
-        if (input.EnterCave())
+
+        if (!_EnterCaveImput)
+        {
+            _EnterCaveImput = input.EnterCave();
+        }
+        if (_EnterCaveImput)
         {
         
             inputEntercave = true;
@@ -229,8 +299,9 @@ public class PlayerController : MonoBehaviour
         
 
         //check if player is in trigger chest and buttom enter is press
-        if (canOpenChest && input.EnterCave())
+        if (canOpenChest && _EnterCaveImput && _CurrentDeep == chestOpener._Deep)
         {
+            _CanMove = false;
             rotate = true;
             chestOpener.OpenChest();
             Destroy(gameObject,6);
@@ -238,10 +309,11 @@ public class PlayerController : MonoBehaviour
        
         //make rotation of player
         if (rotate)
-        {
+        { 
+            
             if (currentDelayGravityChange >= delayGravityEnd)  //delay
             {
-         
+                Invoke(nameof(SetDisableInputDelay), 2);
                 currentDelayGravityChange = 0f;   //Reset currentDelayGravityChange for next time
 
             }
@@ -266,6 +338,45 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public bool _CanMove = true;
+    private void SetDisableInputDelay()
+    {
+        _CanMove = true;
+        rb.constraints = RigidbodyConstraints2D.None;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    private bool _CanJumpDelay = true;
+
+    public bool GetCanMove()
+    {
+        return _CanMove;
+    }
+    private void CanJumpDelay()
+    {
+        _CanJumpDelay = true;
+    }
+
+    private void SetJumpOn()
+    {
+        _JumpImput = true;
+    }
+    
+    private void SetJumpOff()
+    {
+        _JumpImput = false;
+    }
+    
+    private void SetFireOn()
+    {
+        _FireImput = true;
+    }
+    
+    private void SetFireOff()
+    {
+        _FireImput = false;
+    }
+    
 
     //getter bool run for animator
     public bool GetinputEntercave()
@@ -273,6 +384,16 @@ public class PlayerController : MonoBehaviour
         return inputEntercave;
     }
 
+    public bool GetJumpInput()
+    {
+        return _JumpImput;
+    }
+    
+    public bool GetFireInput()
+    {
+        return _FireImput;
+    }
+    
     //getter bool run for animator
     public bool GetRun()
     {
@@ -308,6 +429,10 @@ public class PlayerController : MonoBehaviour
 
     public void SetterRotate(bool onOff)
     {
+        if (onOff)
+        {
+            _CanMove = false;
+        }
         rotate = onOff;
     }
 
@@ -315,11 +440,15 @@ public class PlayerController : MonoBehaviour
     {
         rb.gravityScale = normalGravity;
     }
+    
+    public bool GetMovementInput()
+    {
+        return MovementInput != 0;
+    }
 
     // DetecT Envorinement / Ennemy
     void OnTriggerEnter2D(Collider2D other)
     {
-
         rb.gravityScale = normalGravity;  // return to normal gravity
         canJump = true;    // enable input jump
         jump = false;     // stop event timer jumpe

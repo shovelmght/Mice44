@@ -257,6 +257,17 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""268c5eb1-55b1-44d4-a3be-150c14caebb7"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""f4d32947-406e-45cb-bafe-84f36c99b1ac"",
                     ""path"": ""<Mouse>/delta/x"",
                     ""interactions"": """",
@@ -558,7 +569,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""d156e0a3-d44d-4f51-873a-a24f7e7fe91e"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -657,13 +668,13 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
             ]
         },
         {
-            ""name"": ""MainArcade"",
-            ""id"": ""3c22a82f-d65d-4d61-884d-afd7f0a2de71"",
+            ""name"": ""WizardAndKnight"",
+            ""id"": ""bcbd33d6-876b-4396-8e40-6fc150188364"",
             ""actions"": [
                 {
                     ""name"": ""MoveX"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""5e94392e-98b1-435b-a8c5-0d7768cee526"",
+                    ""id"": ""a76a31de-ba82-4702-9f99-3cb7ff1327f4"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -671,7 +682,23 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 {
                     ""name"": ""MoveY"",
                     ""type"": ""PassThrough"",
-                    ""id"": ""597ece67-ed96-423d-8059-b1b4a95467cd"",
+                    ""id"": ""646e80f4-5c38-4f00-a0f2-350cf7c5998c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""DetectControllerXbox"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""cbaa26f5-6d6d-4a2b-ab8c-ac6d6f613fd4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""DetectKeyboardMouse"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""5d2c6dc1-881e-48e9-bca2-c0be68690f9d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -679,7 +706,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Fire"",
                     ""type"": ""Button"",
-                    ""id"": ""b341f0b0-9cea-42db-93fa-cd29758d97a7"",
+                    ""id"": ""2eeaaff7-3757-420b-ab39-b2f831eb4c4b"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -687,7 +714,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Option"",
                     ""type"": ""Button"",
-                    ""id"": ""6532cff9-ee78-404a-9736-6946fefdba02"",
+                    ""id"": ""644f6668-3927-420c-8bab-e60d8783cca6"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -695,8 +722,24 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Action"",
                     ""type"": ""Button"",
-                    ""id"": ""c7dac3f9-5ef0-4f83-b3a2-2fed45ee4a76"",
+                    ""id"": ""0f353444-7bd1-4386-9278-c466896340ae"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CameraControl"",
+                    ""type"": ""Value"",
+                    ""id"": ""5ef59b3f-cd21-449f-8188-73b62414e9bd"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CameraControlXbox"",
+                    ""type"": ""Value"",
+                    ""id"": ""a2b2c602-67a5-4402-90b5-90339bf570b3"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 }
@@ -704,7 +747,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": ""Sideways"",
-                    ""id"": ""97b2b3d5-c7f0-4922-bfc8-ee27d9640d51"",
+                    ""id"": ""b7773a51-5e13-4282-8655-02d5c25e9a29"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -715,7 +758,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""8126fde3-3cba-4ef7-84cb-9c89c246a2c3"",
+                    ""id"": ""cd3a053b-ff93-4c09-94d9-52682c70ea38"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -726,7 +769,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""edc42b24-09e7-4daa-ab83-8f6f49c7cfc1"",
+                    ""id"": ""7a63068f-4640-41bc-beaf-d6ebc2eb55c4"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -737,7 +780,40 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Sideways"",
-                    ""id"": ""42fedc53-f84a-4ae6-a5b1-7e5b42a2fc72"",
+                    ""id"": ""c1e53afa-a3c6-455b-a9ca-45ed980d6929"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveX"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""91e6cac2-be49-4b0e-a8bc-a9f5ba242a39"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""74bae302-fdad-4202-8cac-e27bedc78f7c"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveX"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Sideways"",
+                    ""id"": ""9ed05f51-64c5-4f5c-9f12-47a1a1788b89"",
                     ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -748,7 +824,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""6a4221f2-bbd3-4973-ad95-61ec60b4ff98"",
+                    ""id"": ""479e2f42-b21f-4eb1-bf8d-1be1d2e1ce96"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -759,7 +835,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""c7f2eafd-29bb-4628-8a99-9a08e7fee7e6"",
+                    ""id"": ""f852f801-a02f-4f42-9c10-0cd09a52bd62"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -769,9 +845,42 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""Sideways"",
+                    ""id"": ""f6ed9df1-89d0-4da0-b62f-3ebd534355f9"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveY"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""77fa0b3c-c4f5-4fa1-b8ec-2d15d562ce2b"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""c542a46f-94fc-4793-b886-d6b153d36b1a"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveY"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
-                    ""id"": ""b7a0dfc0-b35f-402e-9dc5-2f039a89967a"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""id"": ""06c8a0b0-f837-4755-8f78-a655713bf970"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -781,18 +890,7 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""dfd16e3e-9f3d-4a09-b169-388388e439a0"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Fire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""81404c53-3697-4d15-a604-e59e5976643c"",
+                    ""id"": ""5cbfe42b-f91a-41af-a8b1-bd1483734208"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -803,12 +901,122 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e9dd1945-f613-4759-ba29-93022128883f"",
+                    ""id"": ""13ac7c14-a391-495f-950a-f0ecb872a514"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Option"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba6bd334-db58-423d-b5ce-7233a4fe1abd"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""60654d31-ebb7-456f-94d8-503984debba7"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""40ad14ef-f216-4284-95c6-cbcee8aeab32"",
+                    ""path"": ""<Mouse>/delta/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraControl"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Sideways"",
+                    ""id"": ""8815f73b-7eea-41fd-84ea-522c181a0958"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DetectControllerXbox"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""2a5c85fa-9851-4ec3-8cc6-9419282b9576"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DetectControllerXbox"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""47c4cd19-fa57-4d23-be10-0d04c31eb487"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DetectControllerXbox"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Sideways"",
+                    ""id"": ""2014fe2c-de92-45c5-8a76-96ebeac2bca7"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DetectKeyboardMouse"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""659f8e04-ac4a-45fe-92ec-bd7b0cf7044d"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DetectKeyboardMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""2254fa47-e45a-4fac-bb5e-363e2d6b7101"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""DetectKeyboardMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e2d29160-9f31-4005-9e53-ee25d2ab18e2"",
+                    ""path"": ""<Gamepad>/rightStick/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraControlXbox"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1030,13 +1238,17 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
         m_ArcadeMain_Action = m_ArcadeMain.FindAction("Action", throwIfNotFound: true);
         m_ArcadeMain_CameraControl = m_ArcadeMain.FindAction("CameraControl", throwIfNotFound: true);
         m_ArcadeMain_CameraControlXbox = m_ArcadeMain.FindAction("CameraControlXbox", throwIfNotFound: true);
-        // MainArcade
-        m_MainArcade = asset.FindActionMap("MainArcade", throwIfNotFound: true);
-        m_MainArcade_MoveX = m_MainArcade.FindAction("MoveX", throwIfNotFound: true);
-        m_MainArcade_MoveY = m_MainArcade.FindAction("MoveY", throwIfNotFound: true);
-        m_MainArcade_Fire = m_MainArcade.FindAction("Fire", throwIfNotFound: true);
-        m_MainArcade_Option = m_MainArcade.FindAction("Option", throwIfNotFound: true);
-        m_MainArcade_Action = m_MainArcade.FindAction("Action", throwIfNotFound: true);
+        // WizardAndKnight
+        m_WizardAndKnight = asset.FindActionMap("WizardAndKnight", throwIfNotFound: true);
+        m_WizardAndKnight_MoveX = m_WizardAndKnight.FindAction("MoveX", throwIfNotFound: true);
+        m_WizardAndKnight_MoveY = m_WizardAndKnight.FindAction("MoveY", throwIfNotFound: true);
+        m_WizardAndKnight_DetectControllerXbox = m_WizardAndKnight.FindAction("DetectControllerXbox", throwIfNotFound: true);
+        m_WizardAndKnight_DetectKeyboardMouse = m_WizardAndKnight.FindAction("DetectKeyboardMouse", throwIfNotFound: true);
+        m_WizardAndKnight_Fire = m_WizardAndKnight.FindAction("Fire", throwIfNotFound: true);
+        m_WizardAndKnight_Option = m_WizardAndKnight.FindAction("Option", throwIfNotFound: true);
+        m_WizardAndKnight_Action = m_WizardAndKnight.FindAction("Action", throwIfNotFound: true);
+        m_WizardAndKnight_CameraControl = m_WizardAndKnight.FindAction("CameraControl", throwIfNotFound: true);
+        m_WizardAndKnight_CameraControlXbox = m_WizardAndKnight.FindAction("CameraControlXbox", throwIfNotFound: true);
         // FlappyBird
         m_FlappyBird = asset.FindActionMap("FlappyBird", throwIfNotFound: true);
         m_FlappyBird_Fly = m_FlappyBird.FindAction("Fly", throwIfNotFound: true);
@@ -1260,49 +1472,69 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
     }
     public ArcadeMainActions @ArcadeMain => new ArcadeMainActions(this);
 
-    // MainArcade
-    private readonly InputActionMap m_MainArcade;
-    private IMainArcadeActions m_MainArcadeActionsCallbackInterface;
-    private readonly InputAction m_MainArcade_MoveX;
-    private readonly InputAction m_MainArcade_MoveY;
-    private readonly InputAction m_MainArcade_Fire;
-    private readonly InputAction m_MainArcade_Option;
-    private readonly InputAction m_MainArcade_Action;
-    public struct MainArcadeActions
+    // WizardAndKnight
+    private readonly InputActionMap m_WizardAndKnight;
+    private IWizardAndKnightActions m_WizardAndKnightActionsCallbackInterface;
+    private readonly InputAction m_WizardAndKnight_MoveX;
+    private readonly InputAction m_WizardAndKnight_MoveY;
+    private readonly InputAction m_WizardAndKnight_DetectControllerXbox;
+    private readonly InputAction m_WizardAndKnight_DetectKeyboardMouse;
+    private readonly InputAction m_WizardAndKnight_Fire;
+    private readonly InputAction m_WizardAndKnight_Option;
+    private readonly InputAction m_WizardAndKnight_Action;
+    private readonly InputAction m_WizardAndKnight_CameraControl;
+    private readonly InputAction m_WizardAndKnight_CameraControlXbox;
+    public struct WizardAndKnightActions
     {
         private @NewActionInputManager m_Wrapper;
-        public MainArcadeActions(@NewActionInputManager wrapper) { m_Wrapper = wrapper; }
-        public InputAction @MoveX => m_Wrapper.m_MainArcade_MoveX;
-        public InputAction @MoveY => m_Wrapper.m_MainArcade_MoveY;
-        public InputAction @Fire => m_Wrapper.m_MainArcade_Fire;
-        public InputAction @Option => m_Wrapper.m_MainArcade_Option;
-        public InputAction @Action => m_Wrapper.m_MainArcade_Action;
-        public InputActionMap Get() { return m_Wrapper.m_MainArcade; }
+        public WizardAndKnightActions(@NewActionInputManager wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MoveX => m_Wrapper.m_WizardAndKnight_MoveX;
+        public InputAction @MoveY => m_Wrapper.m_WizardAndKnight_MoveY;
+        public InputAction @DetectControllerXbox => m_Wrapper.m_WizardAndKnight_DetectControllerXbox;
+        public InputAction @DetectKeyboardMouse => m_Wrapper.m_WizardAndKnight_DetectKeyboardMouse;
+        public InputAction @Fire => m_Wrapper.m_WizardAndKnight_Fire;
+        public InputAction @Option => m_Wrapper.m_WizardAndKnight_Option;
+        public InputAction @Action => m_Wrapper.m_WizardAndKnight_Action;
+        public InputAction @CameraControl => m_Wrapper.m_WizardAndKnight_CameraControl;
+        public InputAction @CameraControlXbox => m_Wrapper.m_WizardAndKnight_CameraControlXbox;
+        public InputActionMap Get() { return m_Wrapper.m_WizardAndKnight; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MainArcadeActions set) { return set.Get(); }
-        public void SetCallbacks(IMainArcadeActions instance)
+        public static implicit operator InputActionMap(WizardAndKnightActions set) { return set.Get(); }
+        public void SetCallbacks(IWizardAndKnightActions instance)
         {
-            if (m_Wrapper.m_MainArcadeActionsCallbackInterface != null)
+            if (m_Wrapper.m_WizardAndKnightActionsCallbackInterface != null)
             {
-                @MoveX.started -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnMoveX;
-                @MoveX.performed -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnMoveX;
-                @MoveX.canceled -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnMoveX;
-                @MoveY.started -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnMoveY;
-                @MoveY.performed -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnMoveY;
-                @MoveY.canceled -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnMoveY;
-                @Fire.started -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnFire;
-                @Fire.performed -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnFire;
-                @Fire.canceled -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnFire;
-                @Option.started -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnOption;
-                @Option.performed -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnOption;
-                @Option.canceled -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnOption;
-                @Action.started -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnAction;
-                @Action.performed -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnAction;
-                @Action.canceled -= m_Wrapper.m_MainArcadeActionsCallbackInterface.OnAction;
+                @MoveX.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnMoveX;
+                @MoveX.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnMoveX;
+                @MoveX.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnMoveX;
+                @MoveY.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnMoveY;
+                @MoveY.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnMoveY;
+                @MoveY.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnMoveY;
+                @DetectControllerXbox.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnDetectControllerXbox;
+                @DetectControllerXbox.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnDetectControllerXbox;
+                @DetectControllerXbox.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnDetectControllerXbox;
+                @DetectKeyboardMouse.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnDetectKeyboardMouse;
+                @DetectKeyboardMouse.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnDetectKeyboardMouse;
+                @DetectKeyboardMouse.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnDetectKeyboardMouse;
+                @Fire.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnFire;
+                @Fire.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnFire;
+                @Fire.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnFire;
+                @Option.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnOption;
+                @Option.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnOption;
+                @Option.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnOption;
+                @Action.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnAction;
+                @Action.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnAction;
+                @Action.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnAction;
+                @CameraControl.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnCameraControl;
+                @CameraControl.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnCameraControl;
+                @CameraControl.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnCameraControl;
+                @CameraControlXbox.started -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnCameraControlXbox;
+                @CameraControlXbox.performed -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnCameraControlXbox;
+                @CameraControlXbox.canceled -= m_Wrapper.m_WizardAndKnightActionsCallbackInterface.OnCameraControlXbox;
             }
-            m_Wrapper.m_MainArcadeActionsCallbackInterface = instance;
+            m_Wrapper.m_WizardAndKnightActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @MoveX.started += instance.OnMoveX;
@@ -1311,6 +1543,12 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 @MoveY.started += instance.OnMoveY;
                 @MoveY.performed += instance.OnMoveY;
                 @MoveY.canceled += instance.OnMoveY;
+                @DetectControllerXbox.started += instance.OnDetectControllerXbox;
+                @DetectControllerXbox.performed += instance.OnDetectControllerXbox;
+                @DetectControllerXbox.canceled += instance.OnDetectControllerXbox;
+                @DetectKeyboardMouse.started += instance.OnDetectKeyboardMouse;
+                @DetectKeyboardMouse.performed += instance.OnDetectKeyboardMouse;
+                @DetectKeyboardMouse.canceled += instance.OnDetectKeyboardMouse;
                 @Fire.started += instance.OnFire;
                 @Fire.performed += instance.OnFire;
                 @Fire.canceled += instance.OnFire;
@@ -1320,10 +1558,16 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 @Action.started += instance.OnAction;
                 @Action.performed += instance.OnAction;
                 @Action.canceled += instance.OnAction;
+                @CameraControl.started += instance.OnCameraControl;
+                @CameraControl.performed += instance.OnCameraControl;
+                @CameraControl.canceled += instance.OnCameraControl;
+                @CameraControlXbox.started += instance.OnCameraControlXbox;
+                @CameraControlXbox.performed += instance.OnCameraControlXbox;
+                @CameraControlXbox.canceled += instance.OnCameraControlXbox;
             }
         }
     }
-    public MainArcadeActions @MainArcade => new MainArcadeActions(this);
+    public WizardAndKnightActions @WizardAndKnight => new WizardAndKnightActions(this);
 
     // FlappyBird
     private readonly InputActionMap m_FlappyBird;
@@ -1419,13 +1663,17 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
         void OnCameraControl(InputAction.CallbackContext context);
         void OnCameraControlXbox(InputAction.CallbackContext context);
     }
-    public interface IMainArcadeActions
+    public interface IWizardAndKnightActions
     {
         void OnMoveX(InputAction.CallbackContext context);
         void OnMoveY(InputAction.CallbackContext context);
+        void OnDetectControllerXbox(InputAction.CallbackContext context);
+        void OnDetectKeyboardMouse(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
         void OnOption(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
+        void OnCameraControl(InputAction.CallbackContext context);
+        void OnCameraControlXbox(InputAction.CallbackContext context);
     }
     public interface IFlappyBirdActions
     {

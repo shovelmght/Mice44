@@ -39,6 +39,7 @@ public class MainMenu : MonoBehaviour
     {
         StartCoroutine(DelayStartLvl1("Level_1"));  //Fade and load level 1
         GameManagerWizardAndKnight.instance.SetterCurrentLvl(1);   // Tell to Game Manager what is current level
+        
     }
 
 

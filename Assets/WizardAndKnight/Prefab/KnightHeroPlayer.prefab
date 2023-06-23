@@ -593,7 +593,7 @@ Animator:
   m_GameObject: {fileID: 1533630865726725839}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 844657385f130b04ab8a7991ac40261a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8f14debbca1d6a247bb32bac5bb1ae56, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7d1754657287fb140a6c2bf5e652dd16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -616,6 +616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay_Jump: 0.7
   delayAttack: 0.15
+  delayHit: 0.8
 --- !u!1 &1572905124563543050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,7 +1330,7 @@ Animator:
   m_GameObject: {fileID: 3115922126209168248}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 844657385f130b04ab8a7991ac40261a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8f14debbca1d6a247bb32bac5bb1ae56, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7d1754657287fb140a6c2bf5e652dd16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1352,6 +1353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay_Jump: 0.7
   delayAttack: 0.15
+  delayHit: 0.8
 --- !u!1 &3123391065313870601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,15 +1530,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  projectil: {fileID: 2289430926615508272, guid: 1ee64179bbf12474a988f916cc6acf17, type: 3}
+  projectil: {fileID: 2289430926615508272, guid: e752f81b2f3c07041a4bc52baed61569, type: 3}
   gravity: 4.5
   speedWalk: 4.8
   speedRun: 7
-  forceJump: 380
-  normalGravity: 1.5
+  forceJump: 550
+  normalGravity: 3
+  _CanJumpDelayTime: 0.75
   delayGravityEnd: 0.5
+  delayInvulnerabilityEnd: 0.5
   delayRunEnd: 2
-  delayProjectilEnd: 0.25
+  delayProjectilEnd: 0.1
+  Healt: 0
+  _CurrentDeep: 0
+  rb: {fileID: 0}
+  chestOpener: {fileID: 0}
+  _CanMove: 1
 --- !u!1 &3405998030517450453
 GameObject:
   m_ObjectHideFlags: 0

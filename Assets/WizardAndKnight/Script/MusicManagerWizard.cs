@@ -50,7 +50,6 @@ public class MusicManagerWizard : MonoBehaviour
         isFadeOut = true;
         while (volume > minVolume)
         {
-            Debug.Log(volume);
             mixerAudio.SetFloat("Master", volume - speedLerpFadeOut * Time.deltaTime);
             mixerAudio.GetFloat("Master", out volume);
             yield return null;

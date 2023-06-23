@@ -2581,6 +2581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay_Jump: 0.7
   delayAttack: 0.15
+  delayHit: 0.8
 --- !u!1 &8450036664491000046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,6 +2651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay_Jump: 0.7
   delayAttack: 0.15
+  delayHit: 0.8
 --- !u!1 &8539078735228478389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,11 +2837,18 @@ MonoBehaviour:
   gravity: 4.5
   speedWalk: 4.8
   speedRun: 7
-  forceJump: 380
-  normalGravity: 1.5
+  forceJump: 550
+  normalGravity: 3
+  _CanJumpDelayTime: 0.75
   delayGravityEnd: 0.5
+  delayInvulnerabilityEnd: 0.5
   delayRunEnd: 2
   delayProjectilEnd: 0.25
+  Healt: 0
+  _CurrentDeep: 0
+  rb: {fileID: 0}
+  chestOpener: {fileID: 0}
+  _CanMove: 1
 --- !u!1 &8765539052831617862
 GameObject:
   m_ObjectHideFlags: 0

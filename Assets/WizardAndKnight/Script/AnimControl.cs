@@ -46,7 +46,7 @@ public class AnimControl : MonoBehaviour
     {
 
         //Anim Jump
-        if (input.Jump())
+        if (input.Jump() || player.GetJumpInput())
         {
          
             if (!doOnceJump)    // make set trigger jump do once
@@ -81,7 +81,7 @@ public class AnimControl : MonoBehaviour
 
         }
         //Anim Attack
-        else if (input.ShootProjectil())
+        else if (input.ShootProjectil() || player.GetFireInput())
         {
             if(!doOnceAttack)
             {
@@ -98,8 +98,10 @@ public class AnimControl : MonoBehaviour
             animator.SetBool("Shifting", false);
         }
         //Anim Shifting
-        else if (input.WantsMoveRight() || input.WantsMoveLeft())
+        else if (input.WantsMoveRight() || input.WantsMoveLeft() || player.GetMovementInput())
         {
+            if(!player.GetCanMove()){return;}
+            
             animator.SetBool("Shifting", true);
             animator.SetBool("Idle", false);
             animator.SetBool("Run", false);

@@ -20,6 +20,8 @@ public class CaveTeleport : MonoBehaviour
     private bool playerisThere;
 
     private bool doOnce;
+    
+    public int _Deep;  
 
 
     private void Start()
@@ -37,9 +39,10 @@ public class CaveTeleport : MonoBehaviour
         if(playerisThere)
         {
 
-            if (player.GetinputEntercave() && canEntercave && !doOnce)
+            if (player.GetinputEntercave() && canEntercave && !doOnce && player._CurrentDeep == _Deep)
             {
-
+                player.rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                player._CanMove = false;
                 doOnce = true;
                 StartCoroutine(TeleportPlayer());
             }  
@@ -85,9 +88,19 @@ public class CaveTeleport : MonoBehaviour
     IEnumerator TeleportPlayer()
     {
         if (isCaveB)
+        {
             levelManger.SetterSideWorld(-1);
+            player._CurrentDeep--;
+            Debug.Log("player_CurrentDeep =  " + player._CurrentDeep);
+        }
+
         else
+        {
             levelManger.SetterSideWorld(1);
+            player._CurrentDeep++;
+            Debug.Log("player_CurrentDeep =  " + player._CurrentDeep);
+        }
+
         levelManger.EnterCave();          //Set ennemy and floor active on side B
         StartCoroutine(uI.Lerp());      //Make animation of UI
         player.SetterIsInvulnerable(true);
@@ -117,6 +130,7 @@ public class CaveTeleport : MonoBehaviour
 
         player.SetterIsInvulnerable(false);
         player.SetterDisableInput(false);          // disable imput while teleport cave
+   
         doOnce = false;
     }
 
