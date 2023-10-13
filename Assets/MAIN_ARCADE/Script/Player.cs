@@ -48,8 +48,8 @@ public class Player : MonoBehaviour
     {
         eventSystem = GameObject.FindGameObjectWithTag("EventSystem").GetComponent<EventSystem>();
         eventSystem.firstSelectedGameObject = firstButton;
-        playerInput.ArcadeMain.Action.performed += _ => Action();
-        playerInput.ArcadeMain.Option.performed += _ => OptionCanva();
+        playerInput.ArcadeMain1.Action.performed += _ => Action();
+        playerInput.ArcadeMain1.Option.performed += _ => OptionCanva();
         rb = GetComponent<Rigidbody>();
         canvaEsc = GameObject.FindGameObjectWithTag("Esc");
         canvaOption = GameObject.FindGameObjectWithTag("CanvasOption");
@@ -122,10 +122,10 @@ public class Player : MonoBehaviour
 
         Debug.DrawRay(transform.position + new Vector3(0, 0.23f, dist), dwn * maxDistanceRaycast, Color.yellow);
 
-        animMouse.SetFloat("Movement", playerInput.ArcadeMain.MoveY.ReadValue<float>());
-        animMouse.SetFloat("MovementX", playerInput.ArcadeMain.MoveX.ReadValue<float>());
-        float movementInputX = playerInput.ArcadeMain.MoveX.ReadValue<float>();
-        float movementInputY = playerInput.ArcadeMain.MoveY.ReadValue<float>();
+        animMouse.SetFloat("Movement", playerInput.ArcadeMain1.MoveY.ReadValue<float>());
+        animMouse.SetFloat("MovementX", playerInput.ArcadeMain1.MoveX.ReadValue<float>());
+        float movementInputX = playerInput.ArcadeMain1.MoveX.ReadValue<float>();
+        float movementInputY = playerInput.ArcadeMain1.MoveY.ReadValue<float>();
 
         if (isClimbing)
         {

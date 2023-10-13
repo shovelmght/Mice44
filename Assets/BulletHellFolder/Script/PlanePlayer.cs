@@ -90,11 +90,11 @@ public class PlanePlayer : MonoBehaviour
     }
     virtual public void Start()
     {
-        playerInput.ArcadeMain.Option.performed += _ => OptionCanva();
+        playerInput.ArcadeMain1.Option.performed += _ => OptionCanva();
         StartRevovedUISlider = revovedUISlider;
         playerInput.Disable();
-        playerInput.ArcadeMain.Fire.performed += _ => Fire();
-        playerInput.ArcadeMain.Fire.canceled += _ => Fire2();
+        playerInput.ArcadeMain1.Fire.performed += _ => Fire();
+        playerInput.ArcadeMain1.Fire.canceled += _ => Fire2();
     }
 
     private void OptionCanva()
@@ -139,7 +139,7 @@ public class PlanePlayer : MonoBehaviour
     // Update is called once per frame
     virtual public void Update()
     {
-        float movementInput = playerInput.ArcadeMain.MoveX.ReadValue<float>();
+         float movementInput = playerInput.ArcadeMain1.MoveX.ReadValue<float>();
         Vector3 currentPosition = transform.position;
         if (transform.position.x > -maxBorderX && transform.position.x < maxBorderX)
         {
@@ -152,7 +152,7 @@ public class PlanePlayer : MonoBehaviour
         currentPosition.x += movementInput * speedX * Time.deltaTime;
         transform.position = currentPosition;
 
-        movementInput = playerInput.ArcadeMain.MoveY.ReadValue<float>();
+        movementInput = playerInput.ArcadeMain1.MoveY.ReadValue<float>();
         currentPosition = transform.position;
         if (transform.position.y > -maxBorderY && transform.position.y < maxBorderY)
         {

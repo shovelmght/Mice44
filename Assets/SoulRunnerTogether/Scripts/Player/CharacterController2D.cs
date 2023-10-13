@@ -6,7 +6,9 @@ using LesserKnown.TrapsAndHelpers;
 using System.Collections.Generic;
 using LesserKnown.AI;
 using System; 
-using SpriteGlow; 
+using SpriteGlow;
+using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 namespace LesserKnown.Player
 {
@@ -16,6 +18,10 @@ namespace LesserKnown.Player
     /// </summary>
     public class CharacterController2D : MonoBehaviour
     {
+        [SerializeField] private float slideJumpForceX;
+        [SerializeField] private float slideJumpForceY;
+        [SerializeField] private float _SlidingTime = 1;
+        [SerializeField] private float slideForce = 10;
         public Animator animOption;
         public GameObject canvaMenu;
         public NewActionInputManager playerInput;
@@ -26,9 +32,22 @@ namespace LesserKnown.Player
         public float vertical;
         public GameObject playerMOvementScript;
         public GameObject uIDistanceScript;     // variable gameobject
-        public GameObject UIContol;
-        public GameObject UIContolP;
-        public GameObject UIContolS;
+        public GameObject UIControlPunch;
+        public GameObject UIKeyboradPunch;
+        public GameObject UIControlSlide;
+        public GameObject UIKeyboradSlide;
+        public GameObject UITextSlide;
+        public Image UIKeyboradPunchImage;
+        public GameObject UIKeyboradSwap;
+        public GameObject UIControlSwap;
+        public Image UISwapIamge;
+        public GameObject UIControlJump;
+        public GameObject UIKeyboradClimb;
+        public GameObject UIKeyboardJump;
+        public GameObject UITextJump;
+        public GameObject UIKeyboradPickUp;
+        public GameObject UIControllerPickUp;
+        public GameObject UITextPickUp;
         private Rigidbody2D rb;
         public bool setIsMenuOn;
         private Collider2D p_collider;
@@ -36,7 +55,11 @@ namespace LesserKnown.Player
         private AnimManager anim_manager;
         private CharacterController2D other_player;
         private Animator anim;
+        public bool _IsKeyboard { get; private set;}
+        [SerializeField] private Button _returnButton;
+        private bool _DoOnceUISwap;
 
+        private const float FILL_AMOUT_COVER_KEY = 0.652f;
 
         /// <summary>
         /// This is the CameraFollow script from LesserKnown.Camera attatched to the camera
@@ -112,6 +135,9 @@ namespace LesserKnown.Player
         public bool verticalEnable;
 
         private bool cannot_jump;
+        public bool _IsJumping;
+        public bool _IsPunching;
+        private bool _SlideIsPress;
 
 
         /// <summary>
@@ -130,6 +156,11 @@ namespace LesserKnown.Player
         [Header("Boundaries Ground")]
         public Vector2 boundary_size;
         public Vector2 boundary_placement;
+        
+        [Space(10)]
+        [Header("Boundaries Ground")]
+        public Vector2 boundary_sizeForWall;
+
 
         [Space(10)]
         [Header("Boundaries Right")]
@@ -141,6 +172,8 @@ namespace LesserKnown.Player
         public Vector2 boundary_size_l;
         public Vector2 boundary_placement_l;
         #endregion
+        [SerializeField] private Color deathScreenColor;
+        
         private void Awake()
         {
             playerInput = new NewActionInputManager();
@@ -155,8 +188,16 @@ namespace LesserKnown.Player
         }
         private void Start()
         {
-
-            playerInput.BulletHell.Option.performed += _ => OptionCanva();
+            playerInput.SoulRunner.Swap.performed += _ => ControllerSwapCharacter();
+            playerInput.SoulRunner.Jump.performed += _ => JumpPress();
+            playerInput.SoulRunner.Jump.canceled += _ => JumpUnPress();
+            playerInput.SoulRunner.Punch.performed += _ => PunchPress();
+            playerInput.SoulRunner.Punch.canceled += _ => PunchUnPress();
+            playerInput.SoulRunner.Start.performed += _ => OptionCanva();
+            playerInput.SoulRunner.Slide.performed += _ => SlidePress();
+            playerInput.SoulRunner.Slide.canceled += _ => SlideUnPress();
+            
+            //playerInput.BulletHell.Option.canceled += _ => SwapCharacter();
             horizontalEnable = true;
             rb = GetComponent<Rigidbody2D>();
             player_sprite = GetComponent<SpriteRenderer>();
@@ -179,48 +220,195 @@ namespace LesserKnown.Player
                 if (player != this)
                     other_player = player;
             }
-            UIContolS.SetActive(true);
+            
+           
             StartCoroutine(Swap_Character());
         }
-
+        
+        private void JumpPress()
+        {
+            if (!setIsMenuOn && !PublicVariables.IS_IN_PAUSE_MENU)
+            {
+                _IsJumping = true;
+            }
+            
+        }
+        
+        private void JumpUnPress()
+        {
+            _IsJumping = false;
+        }
+        
+        private void PunchPress()
+        {
+            _IsPunching = true;
+        }
+        
+        private void SlidePress()
+        {
+            if (!setIsMenuOn && !PublicVariables.IS_IN_PAUSE_MENU)
+            {
+                _SlideIsPress = true;
+            }
+        }
+        
+        private void SlideUnPress()
+        {
+            if (!setIsMenuOn && !PublicVariables.IS_IN_PAUSE_MENU)
+            {
+                _SlideIsPress = false;
+            }
+        }
+        private void PunchUnPress()
+        {
+            _IsPunching = false;
+        }
+        
         private void OptionCanva()
         {
-    
             if (is_active)
             {
-              
+              Debug.Log(gameObject.name);
                 if (!setIsMenuOn)
                 {
                     Cursor.lockState = CursorLockMode.None;
                     setIsMenuOn = true;
+                    PublicVariables.IS_IN_PAUSE_MENU = true;
                     animOption.SetBool("In", true);
                     animOption.SetBool("Out", false);
+                    _returnButton.Select();
 
                 }
                 else
                 {
+                    Time.timeScale = 1;
+                    PublicVariables.IS_IN_PAUSE_MENU = false;
                     Cursor.lockState = CursorLockMode.Locked;
-                    setIsMenuOn = false;
+                    Invoke(nameof(SetIsMenuOff), 1);
                     animOption.SetBool("In", false);
                     animOption.SetBool("Out", true);
                 }
             }
         }
 
+        private void SetIsMenuOff()
+        {
+            PublicVariables.IS_IN_PAUSE_MENU = false;
+            setIsMenuOn = false;
+        }
+
+        private bool _IsSliding;
         public void OptionCanvaReturn()
         {
+            Debug.Log(gameObject.name);
             if (is_active)
             {
-                setIsMenuOn = false;
+                Invoke(nameof(SetIsMenuOff), 0.5f);
                 animOption.SetBool("In", false);
                 animOption.SetBool("Out", true);
 
             }
         }
 
+        private IEnumerator SetSliding()
+        {
+            if (!_IsSliding)
+            {
+                _SlideIsPress = false;
+                anim_manager.Slide(true);
+                _IsSliding = true;
+                yield return new WaitForSeconds(_SlidingTime);
+                bool canMove = false;
+
+ 
+                while (!canMove)
+                {
+                    yield return null;
+                    canMove = IsGrounded();
+
+                    if (!canMove)
+                    {
+                        canMove = IsOnPlatform();
+                    }
+                }
+                _IsSliding = false;
+                anim_manager.Slide(false);
+            }
+            
+        }
+
+        public float minMagnitudeRunAnimation;
+
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.LeftShift) || _SlideIsPress)
+            {
+                if (is_active && !is_fighter)
+                {
+                    if (local_left)
+                    {
+                        rb.velocity = new Vector2(-slideForce, rb.velocity.y);
+                    }
+                    else
+                    {
+                        rb.velocity = new Vector2(slideForce, rb.velocity.y);
+                    }
+                    
+                    
+                    StartCoroutine(SetSliding());
+                }
+                
+                
+            }
+            
+            if (!is_fighter)
+            {
+                if (current_picked_box != null )
+                {
+                    float dist = Vector3.Distance(current_picked_box.transform.position, transform.position);
+                    if (dist > 1)
+                    {
+                        can_pick_up = false;
+                        UIKeyboradPickUp.SetActive(false);
+                        UIControllerPickUp.SetActive(false);
+                        UITextPickUp.SetActive(false);
+                    }
+                }
+                
+            }
+            if (!is_fighter && (IsTouchingLeft() || IsTouchingRight()) && !IsGroundedForWallJump())
+            {
+                if (_IsKeyboard)
+                {
+                    if (!PublicVariables.IS_FUSIONED)
+                    {
+                        UIKeyboardJump.SetActive(true);
+                    }
+                    
+                    UIControlJump.SetActive(false);
+                }
+                else
+                {
+                    if (!PublicVariables.IS_FUSIONED)
+                    {
+                        UIControlJump.SetActive(true);
+                    }
+                    
+                    UIKeyboardJump.SetActive(false);
+                }
 
+                if (!PublicVariables.IS_FUSIONED)
+                {
+                    UITextJump.SetActive(true);
+                }
+                
+            }
+            else
+            {
+                UIKeyboardJump.SetActive(false);
+                UIControlJump.SetActive(false);
+                UITextJump.SetActive(false);
+            }
             if (vert)
             {
                 vertical = Input.GetAxisRaw("Vertical");
@@ -235,7 +423,19 @@ namespace LesserKnown.Player
 
             //This changes the y velocity when touching a wall so it gives the feeling the player is sliding on the wall
             if (IsWallFalling())
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / fall_modifier);
+            {
+                if (!is_fighter)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / fall_modifier);
+                }
+                if (is_climbing_ladder)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / fall_modifier);
+                }
+            
+                
+            }
+               // 
 
             Climbing_Ladder();
 
@@ -245,9 +445,11 @@ namespace LesserKnown.Player
             else if (IsWallFalling() && IsTouchingRight())
                 Flip(true);
 
+            
 
             //This triggers the move animation
-            anim_manager.Move(rb.velocity.magnitude > 0 && (IsGrounded() || IsOnPlatform()));
+            //anim_manager.Move(rb.velocity.magnitude > 0 && (IsGrounded() || IsOnPlatform()));
+            anim_manager.Move(rb.velocity.magnitude > minMagnitudeRunAnimation);
 
             if (IsGrounded())
                 doubble_Jump = 2;
@@ -264,8 +466,27 @@ namespace LesserKnown.Player
                 //disabled the symbol player indicator
                 SpriteRenderer indicatorImage = player_indicator.GetComponent<SpriteRenderer>();
                 indicatorImage.enabled = false;
-                UIContolP.SetActive(true);
-                UIContolS.SetActive(false);
+                
+                if (_IsKeyboard)
+                {
+                    UIControlPunch.SetActive(false);
+                    UIKeyboradPunch.SetActive(true);
+                    UIControlSlide.SetActive(false);
+                    UIKeyboradSlide.SetActive(true);
+                    UITextSlide.SetActive(true);
+                    UIKeyboradPunchImage.fillAmount = 1;
+                }
+                else
+                {
+                    UIKeyboradPunch.SetActive(false);
+                    UIControlPunch.SetActive(true);
+                    UITextSlide.SetActive(true);
+                    UIKeyboradSlide.SetActive(false);
+                    UIControlSlide.SetActive(true);
+                    UIKeyboradPunchImage.fillAmount = FILL_AMOUT_COVER_KEY;
+                }
+                
+                
                 Destroy(uIDistanceScript);
                 setLayerController(6);
 
@@ -274,18 +495,188 @@ namespace LesserKnown.Player
 
             if (Input.GetKeyDown(KeyCode.C))
             {
-                if(!setIsMenuOn)
+                if(!setIsMenuOn && !PublicVariables.IS_IN_PAUSE_MENU)
                 {
+                    UIKeyboradClimb.SetActive(false);
                     vertical = 0;
-
+                    if (_DoOnceUISwap)
+                    {
+                        UI_Collectible.Instance.SetCollectibleAnimator("Coin");
+                        UIControlPunch.SetActive(false);
+                        UIKeyboradPunch.SetActive(false);
+                        if (_IsKeyboard)
+                        {
+                            UIControlSlide.SetActive(false);
+                            UIKeyboradSlide.SetActive(true);
+                        }
+                        else
+                        {
+                            UIControlSlide.SetActive(true);
+                            UIKeyboradSlide.SetActive(false);
+                        }
+                        UITextSlide.SetActive(true);
+                        _DoOnceUISwap = false;
+                    }
+                    else
+                    {
+                        UI_Collectible.Instance.SetCollectibleAnimator("Apple");
+                        UITextSlide.SetActive(false);
+                        UIKeyboradSlide.SetActive(false);
+                        UIControlSlide.SetActive(false);
+                        if (_IsKeyboard)
+                        {
+                            UIControlPunch.SetActive(false);
+                            UIKeyboradPunch.SetActive(true);
+                            UIKeyboradPunchImage.fillAmount = 1;
+                        }
+                        else
+                        {
+                            UIKeyboradPunch.SetActive(true);
+                            UIControlPunch.SetActive(true);
+                            UIKeyboradPunchImage.fillAmount = FILL_AMOUT_COVER_KEY;
+                        }
+                        _DoOnceUISwap = true;
+                    }
 
                     //Input.GetAxisRaw("Vertical") = 0;
                     StartCoroutine(Swap_Character());
 
                     ChangeLayer();  //change layer to player/terrain for character can jump head of each other 
                 }
-               
+            }
+            
+            float keyboardValue = playerInput.ArcadeMain1.DetectKeyboadAD.ReadValue<float>();
+            float controllerValue = playerInput.ArcadeMain1.DetectControllerXboxLeftStick.ReadValue<float>();
 
+            if (keyboardValue != 0)
+            {
+
+                if (PublicVariables.IS_FUSIONED)
+                {
+                    UIControlSwap.SetActive(false);
+                    UIKeyboradSwap.SetActive(false);
+                    UIKeyboradSlide.SetActive(true);
+                }
+                else
+                {
+                    UIControlSwap.SetActive(false);
+                    UIControlPunch.SetActive(false);
+                    UIKeyboradPunchImage.fillAmount = 1;
+                    _IsKeyboard = true;
+                    UISwapIamge.fillAmount = 1;
+                    if (!is_fighter)
+                    {
+                        if (is_active)
+                        {
+                            UIKeyboradSlide.SetActive(true);
+                        }
+                       
+                        UIControlSlide.SetActive(false);
+                    }
+                    else
+                    {
+                        UIKeyboradSlide.SetActive(false);
+                        UIControlSlide.SetActive(false);
+                    }
+                }
+           
+            }
+            else if (controllerValue != 0)
+            {
+                if (PublicVariables.IS_FUSIONED)
+                {
+                    UIControlSwap.SetActive(false);
+                    UIKeyboradSwap.SetActive(false);
+                    UIControlSlide.SetActive(true);
+                }
+                else
+                {
+                    UISwapIamge.fillAmount = FILL_AMOUT_COVER_KEY;
+                    UIControlSwap.SetActive(true);
+                    _IsKeyboard = false;
+                    if (!is_fighter)
+                    {
+                        if (is_active)
+                        {
+                            UIControlSlide.SetActive(true);
+                        }
+                        UIKeyboradSlide.SetActive(false);
+                    }
+                    else
+                    {
+                        UIControlSlide.SetActive(false);
+                        UIKeyboradSlide.SetActive(false);
+                    }
+                }
+            }
+        }
+
+        private void ControllerSwapCharacter()
+        {
+            
+            if(!setIsMenuOn && !PublicVariables.IS_IN_PAUSE_MENU)
+            {
+                UIKeyboradClimb.SetActive(false);
+                vertical = 0;
+                if (_DoOnceUISwap)
+                {
+                    UI_Collectible.Instance.SetCollectibleAnimator("Coin");
+                    UIControlPunch.SetActive(false);
+                    UIKeyboradPunch.SetActive(false);
+                    UIKeyboradPunch.SetActive(false);
+                    if (_IsKeyboard)
+                    {
+                        UIControlSlide.SetActive(false);
+                        UIKeyboradSlide.SetActive(true);
+                    }
+                    else
+                    {
+                        UIControlSlide.SetActive(true);
+                        UIKeyboradSlide.SetActive(false);
+                    }
+                    UITextSlide.SetActive(true);
+                    _DoOnceUISwap = false;
+                }
+                else
+                {
+                    UI_Collectible.Instance.SetCollectibleAnimator("Apple");
+                    UITextSlide.SetActive(false);
+                    UIKeyboradSlide.SetActive(false);
+                    UIControlSlide.SetActive(false);
+                    if (_IsKeyboard)
+                    {
+                        UIControlPunch.SetActive(false);
+                        UIKeyboradPunch.SetActive(true);
+                        UIKeyboradPunchImage.fillAmount = 1;
+                    }
+                    else
+                    {
+                        UIKeyboradPunch.SetActive(true);
+                        UIControlPunch.SetActive(true);
+                        UIKeyboradPunchImage.fillAmount = FILL_AMOUT_COVER_KEY;
+                    }
+                    _DoOnceUISwap = true;
+                }
+                
+                //Input.GetAxisRaw("Vertical") = 0;
+                StartCoroutine(Swap_Character());
+
+                ChangeLayer();  //change layer to player/terrain for character can jump head of each other 
+            }
+        }
+
+
+        private void SwapCharacter()
+        {
+            if(!setIsMenuOn && !PublicVariables.IS_IN_PAUSE_MENU)
+            {
+                vertical = 0;
+
+
+                //Input.GetAxisRaw("Vertical") = 0;
+                StartCoroutine(Swap_Character());
+
+                ChangeLayer();  //change layer to player/terrain for character can jump head of each other 
             }
         }
 
@@ -309,8 +700,6 @@ namespace LesserKnown.Player
                 rb.gravityScale = 6.5f;
 
             }
-
-
         }
 
 
@@ -327,7 +716,6 @@ namespace LesserKnown.Player
 
             if (PublicVariables.IS_FUSIONED && is_fighter)
             {
-   
                 is_active = !is_active;
             }
             else if (PublicVariables.IS_FUSIONED && !is_fighter)
@@ -382,16 +770,24 @@ namespace LesserKnown.Player
         /// <param name="movement_speed">The player movement speed</param>
         public void Move(float movement_speed)
         {
-            if (wall_jump || anim_manager.Is_Attacking() || anim_manager.Has_Stop_Animation())
+            if (wall_jump  || anim_manager.Has_Stop_Animation())
                 return;
 
             anim_manager.Climb(false);
             anim_manager.Climb_Stay(false);
 
             if (movement_speed != 0)
-                is_climbing_ladder = false;
+            {
 
-            if (!IsGrounded() && !IsOnPlatform())
+                if (is_climbing_ladder)
+                {
+                    movement_speed /= 3;
+                    anim_manager.Climb(true);
+                }
+            }
+            //is_climbing_ladder = false;
+
+            if (!IsGroundedForWallJump() && !IsOnPlatform())
             {
                 if (IsTouchingRight())
                 {
@@ -407,7 +803,12 @@ namespace LesserKnown.Player
             }
 
 
-            rb.velocity = new Vector2(movement_speed, rb.velocity.y);
+            if (!_IsSliding)
+            {
+                rb.velocity = new Vector2(movement_speed, rb.velocity.y);
+            }
+
+        
 
             if (movement_speed > 0)
                 Flip(false);
@@ -429,9 +830,6 @@ namespace LesserKnown.Player
         {
 
             anim_manager.Die_Anim();
-
-            
-
             if(!PublicVariables.IS_FUSIONED)
                 Reset_Position();
             else
@@ -468,7 +866,6 @@ namespace LesserKnown.Player
         {
             if (is_invicible)
                 return;
-            Debug.Log("des");
             is_invicible = true;
             anim_manager.Get_Hit();
             bool death = PublicVariables.Lose_Health(amount);
@@ -493,7 +890,7 @@ namespace LesserKnown.Player
             if (is_holding_object)
                 return;
 
-            if (movement_speed != 0)
+            if (movement_speed > 0.5f || movement_speed < -0.5f)
                 is_climbing_ladder = true;
 
 
@@ -506,7 +903,7 @@ namespace LesserKnown.Player
             if (!is_climbing_ladder)
                 return;
 
-            if (movement_speed == 0)
+            if (movement_speed == 0 && rb.velocity == Vector2.zero)
             {
                 rb.velocity = new Vector2(rb.velocity.x, 0f);
                 anim_manager.Climb_Stay(true);
@@ -525,7 +922,7 @@ namespace LesserKnown.Player
 
             local_left = left;
         }
-
+        
         /// <summary>
         /// Does the player jump
         /// </summary>
@@ -533,10 +930,9 @@ namespace LesserKnown.Player
         /// <param name="move_speed">The jump force used to jump when next to a wall</param>
         public void Jump(float jump_force)
         {
-         
-            if (!cannot_jump)
+            _IsJumping = false;
+            if (!cannot_jump )
             {
-
                 if (is_holding_object || anim_manager.Has_Stop_Animation())
                     return;
 
@@ -545,7 +941,7 @@ namespace LesserKnown.Player
                 else if (IsTouchingRight())
                     touching_wall = -1;
 
-                if ((IsTouchingLeft() || IsTouchingRight()) && !IsGrounded())
+                if ((IsTouchingLeft() || IsTouchingRight()) && !IsGroundedForWallJump())
                     wall_jump = true;
 
                 if (wall_jump)
@@ -553,6 +949,7 @@ namespace LesserKnown.Player
                     Invoke("Wall_Jump", 0.08f);
 
                     StartCoroutine(DontMove());
+                    StartCoroutine(SetCanJumpAfterWallJump());
                 }
                 if (PublicVariables.IS_FUSIONED && doubble_Jump == 2 && doubble_Jump_in_air == 1)
                 {
@@ -562,9 +959,17 @@ namespace LesserKnown.Player
                     anim_manager.Double_Jump_Anim();
                 }
 
-                if (!IsGrounded() && !IsOnPlatform())
-                    return;
-
+                if (!IsOnPlatform())
+                {
+                    if (!IsGrounded())
+                    {
+                        if (!is_climbing_ladder)
+                        {
+                            return;
+                        }
+                        
+                    }
+                }
 
                 anim_manager.Jump_Anim();
 
@@ -574,7 +979,32 @@ namespace LesserKnown.Player
 
                 }
 
-                rb.velocity = new Vector2(rb.velocity.x, jump_force);
+                if (_IsSliding)
+                {
+                    if (local_left)
+                    {
+                        rb.velocity = new Vector2(rb.velocity.x + -slideJumpForceX, jump_force + slideJumpForceY);
+                    }
+                    else
+                    {
+                        rb.velocity = new Vector2(rb.velocity.x + slideJumpForceX, jump_force + slideJumpForceY);
+                    }
+                    
+                }
+                else
+                {
+                    if (is_fighter && touching_wall > 0 )
+                    {
+                        Debug.Log(rb.velocity.y);
+                        if (anim_manager.GetIsWallSlide())
+                        {
+                            return;
+                        }
+                        
+                    }
+                    rb.velocity = new Vector2(rb.velocity.x, jump_force);
+                }
+                
                 if(PublicVariables.IS_FUSIONED)
                 doubble_Jump_in_air = 1;
 
@@ -587,14 +1017,26 @@ namespace LesserKnown.Player
 
         }
 
+        public IEnumerator SetCanJumpAfterWallJump()
+        {
+            if (!cannot_jump)
+            {
+                cannot_jump = true;
+                yield return new WaitForSeconds(0.25f);
+                cannot_jump = false;
+            }
+        }
+
         public IEnumerator DontMove()
         {
-         
-          
+
+            cannot_jump = true;
             horizontalEnable = false; //--------------------------------------------tell if player can move
             yield return new WaitForSeconds(0.25f);
            
             horizontalEnable = true;
+            yield return new WaitForSeconds(0.25f);
+            cannot_jump = false;
 
         }
         public IEnumerator DontMoveFustion()
@@ -612,8 +1054,10 @@ namespace LesserKnown.Player
         {
             horizontalEnable = false; //--------------------------------------------tell if player can move
             yield return new WaitForSeconds(0.25f);
-            DistanceUI uIDistance = uIDistanceScript.GetComponent<DistanceUI>();      //  ref to script DistanceUI
-            if (uIDistance.distance < 5f && uIDistance.distance2 > 20f || uIDistance.distance > 5f && uIDistance.distance2 < 20f)
+            DistanceUI uIDistance = uIDistanceScript.GetComponent<DistanceUI>();   
+            StartCoroutine(CameraShaker.Instance.Shake());
+            StartCoroutine(FlashWhiteScreenManager._Instance.Flash(deathScreenColor));
+            if (uIDistance._Distance > uIDistance.maxDist )
             {
                 transform.position = new Vector3(-25, -3.5f, 0);
 
@@ -621,8 +1065,7 @@ namespace LesserKnown.Player
             else
             {
                 StartCoroutine("Respawn");
-                transform.position = other_player.transform.position;
-  
+                transform.position = other_player.transform.position +  new Vector3(0,1,0);
             }
 
             horizontalEnable = true;
@@ -668,6 +1111,13 @@ namespace LesserKnown.Player
             return Physics2D.OverlapBox(new Vector2(transform.position.x + boundary_placement.x, transform.position.y - boundary_placement.y), new Vector2(boundary_size.x, boundary_size.y), 0f, ground);
 
         }
+        
+        public bool IsGroundedForWallJump()
+        {
+
+            return Physics2D.OverlapBox(new Vector2(transform.position.x + boundary_placement.x, transform.position.y - boundary_placement.y), new Vector2(boundary_sizeForWall.x, boundary_sizeForWall.y), 0f, ground);
+
+        }
 
         public bool IsOnPlatform()
         {
@@ -700,39 +1150,63 @@ namespace LesserKnown.Player
         /// </summary>
         public bool IsWallFalling()
         {
-            return (IsTouchingLeft() || IsTouchingRight()) && !IsGrounded();
+            bool isWallFalling = (IsTouchingLeft() || IsTouchingRight()) && !IsGroundedForWallJump();
+            if (isWallFalling)
+            {
+                if (rb.velocity.magnitude < minMagnitudeRunAnimation)
+                {
+                    isWallFalling = false;
+                }
+            }
+
+            return isWallFalling;
         }
         #endregion
-
+        
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.tag == "Ladder")
                 can_climb_ladder = true;
 
-            if (collision.tag == "Box")
+            if (collision.tag == "Box" && !is_holding_object)
             {
+                
                 current_picked_box = collision.gameObject.GetComponent<BoxControl>();
-                can_pick_up = true;
+                if (_IsKeyboard)
+                {
+                    if (!PublicVariables.IS_FUSIONED)
+                    {
+                        UIKeyboradPickUp.SetActive(true);
+                    }
+                    
+                    UIControllerPickUp.SetActive(false);
+                }
+                else
+                {
+                    UIKeyboradPickUp.SetActive(false);
+                    UIControllerPickUp.SetActive(true);
+                }
+
+                if (!is_fighter)
+                {
+                    UITextPickUp.SetActive(true);
+                    can_pick_up = true;
+                }
+                
             }
             // Fighter or Fusioned Player can climb trees
             if (collision.tag == "LadderTree" && is_fighter)
             {
                 can_climb_ladder = true;
-                UIContol.SetActive(true);
+                UIKeyboradClimb.SetActive(true);
             }
-
-
+            
             //Fighter or Fusioned Player can climb trees
             if (collision.tag == "LadderTree" && PublicVariables.IS_FUSIONED)
             {
                 can_climb_ladder = true;
-                UIContol.SetActive(true);
-             
+                UIKeyboradClimb.SetActive(true);
             }
-
-
-
-
         }
 
         private void OnTriggerExit2D(Collider2D collision)
@@ -740,43 +1214,53 @@ namespace LesserKnown.Player
             if (collision.tag == "Ladder")
                 can_climb_ladder = false;
 
-            if (collision.tag == "Box")
+            if (collision.tag == "Box"&& !is_holding_object)
             {
                 current_picked_box = collision.gameObject.GetComponent<BoxControl>();
                 can_pick_up = false;
+                UIKeyboradPickUp.SetActive(false);
+                UIControllerPickUp.SetActive(false);
+                UITextPickUp.SetActive(false);
             }
 
             //Fighter or Fusioned Player can climb trees
             if (collision.tag == "LadderTree" && is_fighter)
             {
                 can_climb_ladder = false;
-                UIContol.SetActive(false);
+                UIKeyboradClimb.SetActive(false);
             }
-
-
+            
             //Fighter or Fusioned Player can climb trees
             if (collision.tag == "LadderTree" && PublicVariables.IS_FUSIONED)
             {
                 can_climb_ladder = false;
-                UIContolP.SetActive(false);
-                UIContol.SetActive(false);
+                UIKeyboradClimb.SetActive(false);
             }
-
-
         }
 
         private void Send_Hit()
         {
             List<RaycastHit2D> hits = new List<RaycastHit2D>();
-
+            
             if (local_left)
-                Physics2D.Raycast(transform.position, -transform.right, enemy_filter, hits, 1.15f);
-            else if(!local_left)
-                Physics2D.Raycast(transform.position, transform.right, enemy_filter, hits, 1.15f);
-
+            {
+                Physics2D.Raycast(transform.position - new Vector3(0,0.75f,0), -transform.right, enemy_filter, hits, 1.5f);
+            }
+            else if (!local_left)
+            {
+                Physics2D.Raycast(transform.position  - new Vector3(0,0.75f,0), transform.right, enemy_filter, hits, 1.5f);
+            }
             
             if (hits.Count > 0)
+            {
                 hits[0].transform.GetComponent<Enemy_Interface>().Get_Hit(1);
+            }
+                
+        }
+
+        public Rigidbody2D GetRigidbody2D()
+        {
+            return rb;
         }
 
         #region Warrior Region

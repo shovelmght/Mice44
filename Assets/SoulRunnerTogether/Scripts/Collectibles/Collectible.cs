@@ -15,8 +15,10 @@ namespace LesserKnown.Collectibles
         public bool is_picked;
         public bool is_GlowEnabled;
         public bool is_AnimShimmerEnabled;
+        [SerializeField] private bool _IsUI_Only;
 
-        private Animator anim;
+
+        [SerializeField] private Animator anim;
         private AudioSource playerSource;
         private SpriteGlowEffect glow;
 
@@ -38,6 +40,8 @@ namespace LesserKnown.Collectibles
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if(_IsUI_Only) {return;}
+            
             if (other.tag == "Player")
             {
                 CharacterController2D player = other.GetComponent<CharacterController2D>();
@@ -46,6 +50,7 @@ namespace LesserKnown.Collectibles
                 {
                     if (!is_picked)
                     {
+                        UI_Collectible.Instance.SetCollectibleAnimator("Apple");
                         if (PublicVariables.APPLES < PublicVariables.MAX_COLLECTIBLES)
                             PublicVariables.APPLES++;
                         playerSource = other.GetComponent<AudioSource>();
@@ -59,6 +64,7 @@ namespace LesserKnown.Collectibles
                 {
                     if (!is_picked)
                     {
+                        UI_Collectible.Instance.SetCollectibleAnimator("Coin");
                         if (PublicVariables.COINS < PublicVariables.MAX_COLLECTIBLES)
                             PublicVariables.COINS++;
                         playerSource = other.GetComponent<AudioSource>();

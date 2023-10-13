@@ -38,8 +38,8 @@ public class MouseMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mouseValue = playerInput.ArcadeMain.CameraControl.ReadValue<float>();
-        float controllerValue = playerInput.ArcadeMain.CameraControlXbox.ReadValue<float>();
+        float mouseValue = playerInput.ArcadeMain1.CameraControl.ReadValue<float>();
+        float controllerValue = playerInput.ArcadeMain1.CameraControlXbox.ReadValue<float>();
 
         if (mouseValue != 0)
         {

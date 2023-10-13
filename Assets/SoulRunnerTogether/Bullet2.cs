@@ -33,9 +33,17 @@ using LesserKnown.AI;
             if (other.tag == "Enemy")
             {
             AiControlPoisonChamp enemy = other.GetComponent<AiControlPoisonChamp>();
-            enemy.Death();
+            if (enemy != null)
+            {
+                enemy.Death();
+            }
+            
        
-
+            CarrotEnnemy carrotEnemy = other.GetComponent<CarrotEnnemy>();
+            if (carrotEnemy != null)
+            {
+                carrotEnemy.Death();
+            }
        
             }
              else if (other.tag == "Boss")

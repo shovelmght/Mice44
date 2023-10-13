@@ -206,4 +206,9 @@ public class GameManagerWizardAndKnight : MonoBehaviour
     {
         scoreUI.SetActive(onOff);
     }
+
+    public int GetScore()
+    {
+        return score;
+    }
 }

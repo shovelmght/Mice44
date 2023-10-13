@@ -7,11 +7,13 @@ using UnityEngine.UI;
 
 public class AutoSelectButton : MonoBehaviour
 {
+    [SerializeField] private GameObject GameObject;
     [SerializeField] private InputField _FirstSelecableButton;
     [SerializeField] private Button _SecondSelecableButton;
     [SerializeField] private Button _ConfirmButton;
     private NewActionInputManager playerInput;
     private bool InputFieldIsSelected;
+    private bool Canselect;
     
     
     private void Awake()
@@ -27,48 +29,75 @@ public class AutoSelectButton : MonoBehaviour
     {
         playerInput.Disable();
     }
+
+    private int i;
     void Start()
     {
-        if (_FirstSelecableButton.gameObject.activeInHierarchy)
+        i++;
+        Debug.Log("i = " + i );
+      
+        if (_FirstSelecableButton != null && _FirstSelecableButton.gameObject.activeInHierarchy)
         {
             _FirstSelecableButton.Select();
+            _FirstSelecableButton.SetTextWithoutNotify("");
+            
         }
-        else if(_SecondSelecableButton.gameObject.activeInHierarchy)
+        else if(_SecondSelecableButton != null && _SecondSelecableButton.gameObject.activeInHierarchy)
         {
             _SecondSelecableButton.Select();
         }
         
-        playerInput.ArcadeMain.Fire.performed += _ => Fire();
+        playerInput.ArcadeMain1.Fire.canceled += _ => Fire();
     }
 
 
     private void Fire()
     {
-        if (InputFieldIsSelected)
+
+        if (InputFieldIsSelected || Canselect)
         {
             _ConfirmButton.Select();
         }
-       
     }
 
     private void Update()
     {
         InputFieldIsSelected = IsUIElementActive();
+        /*float movementInput = playerInput.ArcadeMain1.MoveY.ReadValue<float>();
+        if (movementInput > 0.5f || movementInput < -0.5f)
+        {
+            if (InputFieldIsSelected || Canselect)
+            {
+                _ConfirmButton.Select();
+            }
+        }*/
     }
 
-    public static bool IsUIElementActive()
+    IEnumerator SetCanControlSelact()
     {
-        if (EventSystem.current.currentSelectedGameObject != null)
+        yield return new WaitForSeconds(0.1f);
+        if (_FirstSelecableButton != null && _FirstSelecableButton.gameObject.activeInHierarchy)
         {
-            InputField IF = EventSystem.current.currentSelectedGameObject.GetComponent<UnityEngine.UI.InputField>();
-            if (IF != null)
-            {
-                
-        
-                return true;
-            }
+            _FirstSelecableButton.Select();
         }
+        else if(_SecondSelecableButton != null && _SecondSelecableButton.gameObject.activeInHierarchy)
+        {
+            _SecondSelecableButton.Select();
+        }
+    }
 
+    public  bool IsUIElementActive()
+    {
+        if (_FirstSelecableButton.isFocused)
+        {
+ 
+                Debug.Log("true");
+                return true;
+            
+        }
+        Debug.Log("false");
         return false;
     }
+
+
 }

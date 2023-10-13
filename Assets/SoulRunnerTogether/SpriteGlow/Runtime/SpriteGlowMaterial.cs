@@ -29,13 +29,17 @@ namespace SpriteGlow
         {
             for (int i = 0; i < sharedMaterials.Count; i++)
             {
-                if (sharedMaterials[i].SpriteTexture == spriteGlow.Renderer.sprite.texture &&
-                    sharedMaterials[i].DrawOutside == spriteGlow.DrawOutside &&
-                    sharedMaterials[i].InstancingEnabled == spriteGlow.EnableInstancing)
-                    return sharedMaterials[i];
+                if (sharedMaterials[i] != null && sharedMaterials[i].SpriteTexture ! == null)
+                {
+                    if (sharedMaterials[i]?.SpriteTexture == spriteGlow.Renderer?.sprite?.texture &&
+                        sharedMaterials[i]?.DrawOutside == spriteGlow?.DrawOutside &&
+                        sharedMaterials[i]?.InstancingEnabled == spriteGlow?.EnableInstancing)
+                        return sharedMaterials[i];
+                }
+
             }
 
-            var material = new SpriteGlowMaterial(spriteGlow.Renderer.sprite.texture, spriteGlow.DrawOutside, spriteGlow.EnableInstancing);
+            var material = new SpriteGlowMaterial(spriteGlow?.Renderer?.sprite?.texture, spriteGlow.DrawOutside, spriteGlow.EnableInstancing);
             material.hideFlags = HideFlags.DontSaveInBuild | HideFlags.DontSaveInEditor | HideFlags.NotEditable;
             sharedMaterials.Add(material);
 

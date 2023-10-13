@@ -17,6 +17,7 @@ public class scr : MonoBehaviour
 
 
 
+            /*
             if (DoOnce)
             {
 
@@ -28,7 +29,7 @@ public class scr : MonoBehaviour
             {
                 UIContol.SetActive(true);
                 DoOnce = true;
-            }
+            }*/
 
 
         }

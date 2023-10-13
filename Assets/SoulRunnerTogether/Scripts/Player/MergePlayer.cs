@@ -28,6 +28,8 @@ public class MergePlayer : MonoBehaviour
     public float maxAlphaGlow = 38f;
     public float minAlphaGlow = 255f;
     private SpriteGlowEffect glowMerge;
+    [SerializeField] private List<GameObject> _OjectToDeactivateWhenMerge;
+
     void Start()
     {
        // camBoss.enabled = false;
@@ -36,7 +38,8 @@ public class MergePlayer : MonoBehaviour
         spawnToBoss.SetActive(false);
         glowMerge = player1.GetComponent<SpriteGlowEffect>();
     }
-
+    
+    
     void Update()
     {
         if (!is_merged)
@@ -47,6 +50,10 @@ public class MergePlayer : MonoBehaviour
                 player22.DonTMovePlsDuringFusion();
                 is_merged = true;
                 StartCoroutine("TeleportToBossIE");
+                foreach (var go in _OjectToDeactivateWhenMerge)
+                {
+                    go.SetActive(false);
+                }
             }
         }
 

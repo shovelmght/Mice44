@@ -16,6 +16,7 @@ namespace LesserKnown.AI
         public GameObject video;
         public GameObject endUIReturn;
         public GameObject endUIExit;
+        public GameObject _PausePannel;
         public GameObject ui;
         public AudioSource audioSource;
         public float endTimer;
@@ -142,6 +143,8 @@ namespace LesserKnown.AI
 
             if (PublicVariables.hp_boss > 0)
             {
+                StartCoroutine(CameraShaker.Instance.Shake());
+                StartCoroutine(FlashWhiteScreenManager._Instance.Flash());
                 PublicVariables.hp_boss -= amount;
                 anim.SetTrigger("Hit");
                 StartCoroutine(DelayInvincible());
@@ -189,6 +192,7 @@ namespace LesserKnown.AI
             Destroy(lifeBar.gameObject);      // destroy this game object
             yield return new WaitForSeconds(endTimer);
             Cursor.lockState = CursorLockMode.None;
+            _PausePannel.SetActive(false);
             endUIReturn.SetActive(true);
             endUIExit.SetActive(true);
         }

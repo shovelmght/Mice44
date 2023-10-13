@@ -23,6 +23,7 @@ namespace LesserKnown.Camera
         public float startingSize;
         public float zoomCamSize = 9f; //for boss ZoomOut
         public bool zoomToBoss;
+        [SerializeField] private GameObject _MapCamera;
         private UnityEngine.Camera thisCam;
 
         /// <summary>
@@ -48,6 +49,12 @@ namespace LesserKnown.Camera
 
             thisCam = GetComponent<UnityEngine.Camera>();
             startingSize = thisCam.orthographicSize;
+            Invoke(nameof(ActivateMapCamera), 1);
+        }
+
+        private void ActivateMapCamera()
+        {
+            _MapCamera.SetActive(true);
         }
 
         /// <summary>

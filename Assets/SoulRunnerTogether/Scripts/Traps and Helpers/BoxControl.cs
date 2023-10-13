@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using LesserKnown.Player;
 using LesserKnown.AI;
@@ -17,6 +18,7 @@ namespace LesserKnown.TrapsAndHelpers
         public GameObject boxControl_1;
         private bool doOnce;
         public float rotat;
+        private bool _CanKill = true;
         private void Start()
         {
             doOnce = true;
@@ -112,11 +114,39 @@ namespace LesserKnown.TrapsAndHelpers
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.tag == "Enemy")
+            if (other.CompareTag("Enemy"))
             {
                 AiControlPoisonChamp enemy = other.GetComponent<AiControlPoisonChamp>();
-                enemy.Death();
+
+                if (enemy != null)
+                {
+                    enemy.Death();
+                }
+            
+       
+                Debug.Log(rb.velocity);
+                Debug.Log(rb.velocity.y);
+                Debug.Log(rb.velocity.x);
+                if (rb.velocity != Vector2.zero)
+                {
+                    CarrotEnnemy carrotEnemy = other.GetComponent<CarrotEnnemy>();
+                    if (carrotEnemy != null)
+                    {
+                        carrotEnemy.Death();
+                    }
+                }
+                else
+                {
+                    _CanKill = false;
+                    Invoke(nameof(ResetDontKill),3);
+                }
+ 
             }
+        }
+
+        private void ResetDontKill()
+        {
+            _CanKill = true;
         }
 
         public void ChangeLayer()

@@ -12,6 +12,7 @@ namespace LesserKnown.Player
     /// </summary>
     public class PlayerMovement : MonoBehaviour
     {
+        public float _ParalaxValue { get; private set; }
         [SerializeField] private Transform pfBullet;
         private CharacterController2D controller;
 
@@ -28,7 +29,9 @@ namespace LesserKnown.Player
         public Transform current_player;
         private bool doOnce;
 
-
+        [SerializeField] private GameObject ParticleEffectPrefab;
+        [SerializeField] private Transform ParticleEffectLeftContainer;
+        [SerializeField] private Transform ParticleEffectRightContainer;
         private CameraFollow cam;
 
         private void Start()
@@ -46,11 +49,10 @@ namespace LesserKnown.Player
 
                 return;
 
-            if (Input.GetKeyDown(jump_key))
+            if (Input.GetKeyDown(jump_key) || controller._IsJumping)
             {
                 controller.Jump(jump_force);
-
-
+                
             }
             //if (Input.GetKeyDown(jump_key))
             //{
@@ -59,12 +61,16 @@ namespace LesserKnown.Player
             //}
 
 
-            if (controller.wall_jump)
-                controller.Jump_Wall(new Vector2(wall_jump_force, jump_force));
-
-            if (Input.GetKeyDown(KeyCode.F))
+            if (controller.wall_jump && !controller.is_fighter)
             {
-             
+                controller.Jump_Wall(new Vector2(wall_jump_force, jump_force));
+            }
+                
+
+            if (Input.GetKeyDown(KeyCode.F)  && !controller.is_climbing_ladder|| controller._IsPunching && !controller.is_climbing_ladder)
+            {
+                StartCoroutine(controller.DontMove());
+                controller._IsPunching = false;
                 if (controller.is_fighter || PublicVariables.IS_FUSIONED)
                 {
                     controller.Attack();
@@ -101,6 +107,7 @@ namespace LesserKnown.Player
                 return;
 
             var h = Input.GetAxisRaw("Horizontal");
+            _ParalaxValue = h;
             //var v = Input.GetAxisRaw("Vertical");
 
             if (controller.horizontalEnable)
@@ -114,6 +121,21 @@ namespace LesserKnown.Player
                 controller.Climb(controller.vertical * climbing_speed);
 
 
+        }
+
+
+
+        public void SpawnPunchParticleEffect()
+        {
+            if (controller.IsLookingLeft())
+            {
+                Instantiate(ParticleEffectPrefab, ParticleEffectLeftContainer.position, Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(ParticleEffectPrefab, ParticleEffectRightContainer.position, Quaternion.identity);
+            }
+            
         }
 
         IEnumerator Spawn_projectil()

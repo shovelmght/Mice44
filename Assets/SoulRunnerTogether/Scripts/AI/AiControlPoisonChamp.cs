@@ -1,10 +1,11 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LesserKnown.Player;
 using LesserKnown.Public;
 using System.Linq;
 using LesserKnown.Audio;
+using TMPro;
 
 namespace LesserKnown.AI {
     public class AiControlPoisonChamp : MonoBehaviour, Enemy_Interface
@@ -13,18 +14,21 @@ namespace LesserKnown.AI {
         private Animator anim;
         private float insidePoisonDistance = 5f;
         private float appear_distance = 8f;
-
         private AudioEnemySounds audioEnemyScrpt;
-
         private float spawn_delay = 4f;
         private float current_delay;
+        private float spawn_delay2 = 0.25f;
+        private float current_delay2;
         public float current_distance;
-
+        [SerializeField] private ScoreManager _ScoreManager;
+        [SerializeField] private TMP_Text  _ScroreText;
+        [SerializeField] private int _ScorePoints;
+        [SerializeField] private CapsuleCollider2D _CapsuleCollider2D;
         public List<float> distances_debug;
-
         public bool is_attacking;
-
-        public GameObject fakePoisonCloud; 
+        public GameObject fakePoisonCloud;
+        private bool _IsDead;
+        
         
         private void Start()
         {
@@ -36,24 +40,43 @@ namespace LesserKnown.AI {
             players = FindObjectsOfType<CharacterController2D>();
         }
 
+        private bool doOnce = true;
         private void Update()
-        {                
+        {     
+            if(_IsDead) {return;}
+            
             if (current_delay >= spawn_delay)
             {
                 if (is_attacking)
                 {
-                    PoisonBurst(false);
-                    PoisonBurst(true);
 
-                    foreach (var player in Verify_Distance(insidePoisonDistance))
+                    if (doOnce)
                     {
-                        if (PublicVariables.IS_FUSIONED)
-                            player.Get_Hit(1);
-                        else
-                            player.Dead();
+                        PoisonBurst(false);
+                        PoisonBurst(true);
+                        doOnce = false;
                     }
+                    
+
+                    if (current_delay2 >= spawn_delay2)
+                    {
+                        if(_IsDead) {return;}
+                        foreach (var player in Verify_Distance(insidePoisonDistance))
+                        {
+                            if (PublicVariables.IS_FUSIONED)
+                                player.Get_Hit(1);
+                            else
+                                player.Dead();
+                        }
+                        current_delay = 0f;
+                        current_delay2 = 0f;
+                        doOnce = true;
+                    }
+                    
+                    current_delay2 += Time.deltaTime;
+      
                 }
-                current_delay = 0f;
+                
             }
             current_delay += Time.deltaTime;
             
@@ -61,6 +84,7 @@ namespace LesserKnown.AI {
 
         public void Appear()
         {
+            if(_IsDead) {return;}
             anim.SetBool("Appear", Verify_Distance(appear_distance).Count > 0);
 
             if (Verify_Distance(appear_distance).Count > 0)
@@ -73,7 +97,8 @@ namespace LesserKnown.AI {
         /// Activates the Mushroom Burst Periodic Poison Region
         /// </summary>
         public void PoisonBurst(bool poison_active) 
-        {          
+        {       
+            if(_IsDead) {return;}
             fakePoisonCloud.SetActive(poison_active);
             if(poison_active)
                 audioEnemyScrpt.PlayPoisonCloud();
@@ -104,20 +129,35 @@ namespace LesserKnown.AI {
         /// </summary>
         public void Death()
         {
-            if (PublicVariables.IS_FUSIONED)
+            if(_IsDead) {return;}
+            _CapsuleCollider2D.enabled = false;
+            StartCoroutine(FlashWhiteScreenManager._Instance.Flash());
+            StartCoroutine(CameraShaker.Instance.Shake());
+            Debug.Log("StartCoroutine(CameraShaker.Instance.Shake());");
+            /*if (PublicVariables.IS_FUSIONED)
                 StartCoroutine(DelayDeath());
             else
-            {
+            {*/
+                _IsDead = true;
                 anim.SetTrigger("Death");
-                Destroy(gameObject, .5f);
-            }
+                _ScroreText.text = _ScorePoints.ToString();
+                Destroy(gameObject, 1.5f);
+           // }
 
         }
+
+        //Caled by animator/animation
+        public void RaiseScore()
+        {
+            _ScoreManager.OnUpdateScore.Invoke(_ScorePoints);
+        }
+        
         IEnumerator DelayDeath()
         {
             yield return new WaitForSeconds(0.5f);
+            _IsDead = true;
             anim.SetTrigger("Death");
-            Destroy(gameObject, .5f);
+            Destroy(gameObject, 1.5f);
         }
 
         /// <summary>

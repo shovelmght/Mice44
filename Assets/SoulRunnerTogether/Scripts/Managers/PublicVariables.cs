@@ -22,12 +22,13 @@ namespace LesserKnown.Public
         public static bool IS_FUSIONED;
         public static bool IS_BOSS_DEAD;
         public static bool IS_RESET;
+        public static bool IS_IN_PAUSE_MENU;
 
         public static bool Lose_Health(int amount)
         {
             hp_player -= amount;
 
-            if (hp_player == 0)
+            if (hp_player <= 0)
                 return true;
 
             return false;

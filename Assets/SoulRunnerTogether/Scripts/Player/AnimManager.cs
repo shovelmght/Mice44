@@ -142,13 +142,30 @@ namespace LesserKnown.Player
             anim.SetBool("WallRun", wall_run);
         }
 
+        public bool GetIsWallSlide()
+        {
+            return anim.GetBool("WallFall");
+        }
+        
+        public void Slide(bool slide)
+        {
+            if (slide)
+            {
+                anim.SetTrigger("Slide");
+            }
+            else
+            {
+                anim.ResetTrigger("Slide");
+            }
+        }
+
         /// <summary>
         /// Activates/Deactivates the wall fall animation
         /// </summary>
         /// <param name="wall_falling"></param>
         public void Wall_Fall(bool wall_falling)
         {
-            anim.SetBool("WallFall", wall_falling);
+            anim.SetBool("WallFall", wall_falling && controller.GetRigidbody2D().velocity.x < 2 &&  controller.GetRigidbody2D().velocity.x > -2);
         }
 
         /// <summary>
