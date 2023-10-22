@@ -7231,6 +7231,7 @@ MonoBehaviour:
   BoxTextScore: {fileID: 371369516}
   BoxButtonQuit: {fileID: 112806222}
   MainMenu: {fileID: 1238285448}
+  RestartButton: {fileID: 371369517}
   MainMenuTxt: {fileID: 2006878841}
   QuitTxt: {fileID: 152998675}
   saveTxt: {fileID: 1068449585}
@@ -8030,6 +8031,7 @@ MonoBehaviour:
   plPref: {fileID: 0}
   gamemanager: {fileID: 865313282}
   texBox: {fileID: 1689957603}
+  _VirtualKeyboard: {fileID: 0}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0

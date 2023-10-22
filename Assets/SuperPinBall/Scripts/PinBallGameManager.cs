@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class PinBallGameManager : MonoBehaviour
@@ -28,6 +29,7 @@ public class PinBallGameManager : MonoBehaviour
     public LerpUI BoxTextScore;
     public LerpUI BoxButtonQuit;
     public LerpUI MainMenu;
+    public Button RestartButton;
     public LerpText MainMenuTxt;
     public LerpText QuitTxt;
     public LerpText saveTxt;
@@ -385,11 +387,37 @@ public class PinBallGameManager : MonoBehaviour
                         StartCoroutine(saveTxt.Lerp());
                         StartCoroutine(QuitTxt.Lerp());
                         StartCoroutine(BoxButtonQuit.Lerp(false));
+                        GameObject reminder = GameObject.FindWithTag("Reminder");
+                        if (reminder != null)
+                        {
+                            ReminderPosPlayer reminderPosPlayer = reminder.GetComponent<ReminderPosPlayer>();
+
+                            if (reminderPosPlayer != null)
+                            {
+                                if (!reminderPosPlayer._IsKeyboard)
+                                {
+                                    StartCoroutine(SelectButtonForController());
+                                    Debug.Log(" RestartButton.Select");
+                                }
+                            }
+                        }
+                        else
+                        {
+                            Debug.Log("Reminder tag game object is not found");
+                        }
+                       
                     }
                     pillarType3.SetGameOverEvent(true);
                 }
             }
         }
+    }
+    
+    [ContextMenu("dsfd")]
+    private IEnumerator SelectButtonForController()
+    {
+        yield return new WaitForSeconds(2);
+        RestartButton.Select();
     }
 
     public void Setscore(int addScore)
