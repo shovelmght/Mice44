@@ -25,6 +25,7 @@ public class Boss : PlanePlayer
     public float gapDist = 1f;
     public float delayBeginShoot = 3f;
     public float speedRotationShip = 0.5f;
+    public float speedBulletPhase = 6;
     public float speedBulletFinalPhase = 6;
     private int idx = 7;
     private int nbFire = 3;
@@ -34,10 +35,13 @@ public class Boss : PlanePlayer
     private float valueToLerp = 1;              // is the value to lerp
     private float startValue = 0;         // is the normal transparence of UI
     private float endValue = 1.1f;           // is the end value of tranparance want lerp
+    private Color _StartingColor;
 
 
     public override void Start()
     {
+        _StartingColor = sprite.color;
+        ui.value = 1;
         StartCoroutine(DelayToShoot());
         playerInput.Disable();
         lifeBar.SetActive(true);
@@ -91,28 +95,37 @@ public class Boss : PlanePlayer
 
     override public IEnumerator ShootFire()
     {
-        float randFlt = Random.Range(minDelayFire, maxDelayFire);
-        yield return new WaitForSeconds(randFlt);
-
-        for (int i = 0; i < nbFire; i++)
+        if (doOnceDead)
         {
-            var shell = Instantiate(bullet, new Vector3(bulletPosRight.position.x, bulletPosRight.position.y, 0), bulletPosRight.rotation);
-            shell.GetComponent<Bullet>().shootDir = noseCanonRight.transform.position - transform.position;
-           var shell2 = Instantiate(bullet, new Vector3(bulletPosLeft.position.x, bulletPosLeft.position.y, 0), bulletPosRight.rotation);
-            shell2.GetComponent<Bullet>().shootDir = noseCanonLeft.transform.position - transform.position;
-            if (haveGoodRotation)
+            float randFlt = Random.Range(minDelayFire, maxDelayFire);
+            yield return new WaitForSeconds(randFlt);
+
+            for (int i = 0; i < nbFire; i++)
             {
-                shell.GetComponent<Bullet>().speed = speedBulletFinalPhase;
-                shell2.GetComponent<Bullet>().speed = speedBulletFinalPhase;
+                var shell = Instantiate(bullet, new Vector3(bulletPosRight.position.x, bulletPosRight.position.y, 0), bulletPosRight.rotation);
+                shell.GetComponent<Bullet>().shootDir = noseCanonRight.transform.position - transform.position;
+                var shell2 = Instantiate(bullet, new Vector3(bulletPosLeft.position.x, bulletPosLeft.position.y, 0), bulletPosRight.rotation);
+                shell2.GetComponent<Bullet>().shootDir = noseCanonLeft.transform.position - transform.position;
+                if (haveGoodRotation)
+                {
+                    shell.GetComponent<Bullet>().speed = speedBulletFinalPhase;
+                    shell2.GetComponent<Bullet>().speed = speedBulletFinalPhase;
+                }
+                else
+                {
+                    shell.GetComponent<Bullet>().speed = speedBulletPhase;
+                    shell2.GetComponent<Bullet>().speed = speedBulletPhase;
+                }
+
+                soundFire.pitch = UnityEngine.Random.Range(2f, 3.0f);
+                soundFire.Play();
+                yield return new WaitForSeconds(fireRate);
             }
 
-            soundFire.pitch = UnityEngine.Random.Range(2f, 3.0f);
-            soundFire.Play();
-            yield return new WaitForSeconds(fireRate);
+            if (life > 0)
+                StartCoroutine(ShootFire());
         }
 
-        if (life > 0)
-        StartCoroutine(ShootFire());
     }
 
     override public void OnTriggerEnter2D(Collider2D collision)
@@ -159,6 +172,7 @@ public class Boss : PlanePlayer
     {
 
         valueUiWanted = ui.value - revovedUISlider;
+
         if (life == 7)
         {
             revovedUISlider -= 0.0175f;
@@ -185,8 +199,8 @@ public class Boss : PlanePlayer
                 prefabHit.SetActive(true);
                 Instantiate(prefabSmoke, transform.position, Quaternion.identity);
                 Instantiate(prefabSmoke2, transform.position, Quaternion.identity);
-                player.OnDisable();
                 gameManager.GameOver(true);
+                lifeBar.SetActive(false);
             }
         }
         else
@@ -208,7 +222,7 @@ public class Boss : PlanePlayer
             if (i > delayInvincible / 2)
             {
                 prefabHit.SetActive(false);
-                sprite.color = Color.white;
+                sprite.color = _StartingColor;
                
             }
             sprite.enabled = false;

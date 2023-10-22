@@ -161,6 +161,20 @@ public class Player : MonoBehaviour
             joystic = other.gameObject;
             nearJoystick = true;
             other.gameObject.GetComponent<JoystickInteraction>().SpawnCancas(mouse.getIsKeyboard());
+            GameObject reminder = GameObject.FindWithTag("Reminder");
+            if (reminder != null)
+            {
+                ReminderPosPlayer reminderPosPlayer = reminder.GetComponent<ReminderPosPlayer>();
+
+                if (reminderPosPlayer != null)
+                {
+                    reminderPosPlayer._IsKeyboard = mouse.getIsKeyboard();
+                }
+            }
+            else
+            {
+                Debug.Log("Reminder tag game object is not found");
+            }
         }
     }
 

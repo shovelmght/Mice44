@@ -26,7 +26,7 @@ public class Fade : MonoBehaviour
         StartCoroutine(RevertLerp());
 
     }
-
+    
 
     // Blend UI tranparence to visible
     public IEnumerator Lerp(bool isRevert)
@@ -94,5 +94,15 @@ public class Fade : MonoBehaviour
     public bool LerpIsEnd()
     {
        return valueToLerp >= endValue - 0.1f; 
+    }
+
+    public void SetAlphaImage(float newValue)
+    {
+        if (image == null)
+        {
+            image = GetComponent<Image>();   
+        }
+        
+        image.color =  new Color( image.color.r, image.color.g, image.color.b, newValue);
     }
 }

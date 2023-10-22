@@ -8,7 +8,7 @@ public class GameManagerBulletHell : MonoBehaviour
     [SerializeField]
     TMPro.TextMeshProUGUI m_text;
     [SerializeField]
-    private GameObject boss;
+    private GameObject[] boss;
     [SerializeField]
     GameObject lifeBar;
     [SerializeField]
@@ -42,6 +42,7 @@ public class GameManagerBulletHell : MonoBehaviour
     public float timeSpawnsManager = 10;
     public int[] idx;
     public int score = 0;
+    public int _GameLoopItteration = 0;
     public bool bossIsHere;
     private bool gameOver;
     private bool doOnce = true;
@@ -83,14 +84,26 @@ public class GameManagerBulletHell : MonoBehaviour
 
     IEnumerator SpawnManager()
     {
-        StartCoroutine(Spawn1());
-        yield return new WaitForSeconds(timeSpawnsManager);
-        StartCoroutine(Spawn2());
-        yield return new WaitForSeconds(timeSpawnsManager);
-        StartCoroutine(Spawn3());
-        yield return new WaitForSeconds(timeSpawnsManager);
-        bossIsHere = true;
-        StartCoroutine(SpawnBoss());
+        while (true)
+        {
+            StartCoroutine(Spawn1());
+            yield return new WaitForSeconds(timeSpawnsManager);
+            StartCoroutine(Spawn2());
+            yield return new WaitForSeconds(timeSpawnsManager);
+            StartCoroutine(Spawn3());
+            yield return new WaitForSeconds(timeSpawnsManager);
+            bossIsHere = true;
+            StartCoroutine(SpawnBoss());
+            while (!_BossIsDead)
+            {
+                yield return new WaitForSeconds(3);
+            }
+
+            _BossIsDead = false;
+            bossIsHere = false;
+            _GameLoopItteration++;
+        }
+
 
     }
 
@@ -133,13 +146,20 @@ public class GameManagerBulletHell : MonoBehaviour
 
     IEnumerator SpawnBoss()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(9);
         if (!gameOver)
-            boss.SetActive(true);
+            boss[_GameLoopItteration].SetActive(true);
     }
 
+    private bool _BossIsDead;
     public void GameOver(bool isWin)
     {
+        if (isWin && boss.Length > _GameLoopItteration + 1)
+        {
+            _BossIsDead = true;
+            return;
+        }
+        playerPlane.OnDisable();
         StartCoroutine(DelayGameOver(isWin));
     }
     IEnumerator DelayGameOver(bool isWin)
@@ -188,8 +208,10 @@ public class GameManagerBulletHell : MonoBehaviour
     {
         StartCoroutine(musicManager.FadeOut());
         blackSreen.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
         Fade fadeBlackScreen = blackSreen.GetComponent<Fade>();
+        fadeBlackScreen.SetAlphaImage(0);
+        yield return new WaitForSeconds(0.5f);
+       
          StartCoroutine(fadeBlackScreen.Lerp(false));
         while (!fadeBlackScreen.LerpIsEnd())
         {

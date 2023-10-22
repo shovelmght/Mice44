@@ -107,10 +107,11 @@ public class MovementManager : MonoBehaviour
         {
             if(!gameManager.GetisMenuScene())
             {
-                cameraBall.SetMainBall();
+                cameraBall.balls.Remove(this.transform);
             }
         }
         gameObject.SetActive(false);
+        Destroy(this);
     }
 
     public void SetMainBall(bool onOff)

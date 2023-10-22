@@ -15,15 +15,21 @@ public class Hole : MonoBehaviour
             {
                 gameManager.SetballInGame(-1);
                 if (other != null)
-                    Destroy(other.gameObject);
+                {
+                    other.GetComponent<MovementManager>().StopBall();
+                }
+                    
             }
             else
             {
 
                   doOnce = false;
                   gameManager.SetballInGame(-1);
-                if(other != null)
-                  other.GetComponent<MovementManager>().StopBall();
+                  if (other != null)
+                  {
+                      other.GetComponent<MovementManager>().StopBall();
+                  }
+              
                
             }
         }

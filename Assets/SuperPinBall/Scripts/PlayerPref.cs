@@ -9,6 +9,7 @@ public class PlayerPref : MonoBehaviour
     public SavePlayerPref plPref;
     public PinBallGameManager gamemanager;
     public InputField texBox;
+    [SerializeField] private GameObject _VirtualKeyboard;
     private bool doOnce = true;
 
     private void Start()
@@ -21,6 +22,7 @@ public class PlayerPref : MonoBehaviour
         if(doOnce)
         {
             doOnce = false;
+            _VirtualKeyboard.SetActive(false);
             if (PlayerPrefs.GetString("Score") == "")
             {
                 PlayerPrefs.SetString("name1", texBox.text);

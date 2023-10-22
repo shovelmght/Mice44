@@ -18,19 +18,46 @@ public class Spring : MonoBehaviour
     public float addForce = 0.3f;
     public float scaleSpring = 0.3f;
     private AudioSource m_AudioSource;
+    private bool _SpringButtonIsPress;
     [SerializeField] private AudioClip soundCharge;
+    public NewActionInputManager playerInput;
+    
+    private void Awake()
+    {
+        playerInput = new NewActionInputManager();
+    }
+
+    public void OnEnable()
+    {
+        playerInput.Enable();
+    }
+    public void OnDisable()
+    {
+        playerInput.Disable();
+    }
 
     void Start()
     {
+        playerInput.ArcadeMain1.Fire.canceled += _ => OnSpringButtonUnPress();
+        playerInput.ArcadeMain1.Fire.performed += _ => OnSpringButtonPress();
         startPos = transform.position.y;
         StartScaleSpring = spring.GetScale();
         m_AudioSource = GetComponent<AudioSource>();
         m_AudioSource.clip = soundCharge;
     }
 
+    private void OnSpringButtonPress()
+    {
+        _SpringButtonIsPress = true;
+    }
+    private void OnSpringButtonUnPress()
+    {
+        _SpringButtonIsPress = false;
+    }
+
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || _SpringButtonIsPress)
         {
             if(!gameManager.GetIsSceneScore())
 

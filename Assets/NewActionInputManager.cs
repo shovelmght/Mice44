@@ -381,6 +381,22 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""LB"",
+                    ""type"": ""Button"",
+                    ""id"": ""7e5417b1-7b2a-4fcf-9776-6b839f34afe8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""RB"",
+                    ""type"": ""Button"",
+                    ""id"": ""055a9fbb-9e6b-49c6-ac47-45980ecb4d87"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -746,6 +762,50 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                     ""action"": ""MoveX"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""565bc053-8e1e-4ebc-83ae-43c1f71e9864"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LB"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""30e94bc7-e7ba-45a3-a045-d9bf6240d583"",
+                    ""path"": ""<XInputController>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LB"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""48956674-3474-4cf4-98bc-8b024171b849"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RB"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b940f398-d3de-428b-bfa0-8a6461a8c108"",
+                    ""path"": ""<XInputController>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RB"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -2054,6 +2114,8 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
         m_ArcadeMain1_CameraControlXbox = m_ArcadeMain1.FindAction("CameraControlXbox", throwIfNotFound: true);
         m_ArcadeMain1_DetectControllerXboxLeftStick = m_ArcadeMain1.FindAction("DetectControllerXboxLeftStick", throwIfNotFound: true);
         m_ArcadeMain1_DetectKeyboadAD = m_ArcadeMain1.FindAction("DetectKeyboadAD", throwIfNotFound: true);
+        m_ArcadeMain1_LB = m_ArcadeMain1.FindAction("LB", throwIfNotFound: true);
+        m_ArcadeMain1_RB = m_ArcadeMain1.FindAction("RB", throwIfNotFound: true);
         // WizardAndKnight
         m_WizardAndKnight = asset.FindActionMap("WizardAndKnight", throwIfNotFound: true);
         m_WizardAndKnight_MoveX = m_WizardAndKnight.FindAction("MoveX", throwIfNotFound: true);
@@ -2227,6 +2289,8 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
     private readonly InputAction m_ArcadeMain1_CameraControlXbox;
     private readonly InputAction m_ArcadeMain1_DetectControllerXboxLeftStick;
     private readonly InputAction m_ArcadeMain1_DetectKeyboadAD;
+    private readonly InputAction m_ArcadeMain1_LB;
+    private readonly InputAction m_ArcadeMain1_RB;
     public struct ArcadeMain1Actions
     {
         private @NewActionInputManager m_Wrapper;
@@ -2242,6 +2306,8 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
         public InputAction @CameraControlXbox => m_Wrapper.m_ArcadeMain1_CameraControlXbox;
         public InputAction @DetectControllerXboxLeftStick => m_Wrapper.m_ArcadeMain1_DetectControllerXboxLeftStick;
         public InputAction @DetectKeyboadAD => m_Wrapper.m_ArcadeMain1_DetectKeyboadAD;
+        public InputAction @LB => m_Wrapper.m_ArcadeMain1_LB;
+        public InputAction @RB => m_Wrapper.m_ArcadeMain1_RB;
         public InputActionMap Get() { return m_Wrapper.m_ArcadeMain1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -2284,6 +2350,12 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 @DetectKeyboadAD.started -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnDetectKeyboadAD;
                 @DetectKeyboadAD.performed -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnDetectKeyboadAD;
                 @DetectKeyboadAD.canceled -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnDetectKeyboadAD;
+                @LB.started -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnLB;
+                @LB.performed -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnLB;
+                @LB.canceled -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnLB;
+                @RB.started -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnRB;
+                @RB.performed -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnRB;
+                @RB.canceled -= m_Wrapper.m_ArcadeMain1ActionsCallbackInterface.OnRB;
             }
             m_Wrapper.m_ArcadeMain1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -2321,6 +2393,12 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
                 @DetectKeyboadAD.started += instance.OnDetectKeyboadAD;
                 @DetectKeyboadAD.performed += instance.OnDetectKeyboadAD;
                 @DetectKeyboadAD.canceled += instance.OnDetectKeyboadAD;
+                @LB.started += instance.OnLB;
+                @LB.performed += instance.OnLB;
+                @LB.canceled += instance.OnLB;
+                @RB.started += instance.OnRB;
+                @RB.performed += instance.OnRB;
+                @RB.canceled += instance.OnRB;
             }
         }
     }
@@ -2712,6 +2790,8 @@ public class @NewActionInputManager : IInputActionCollection, IDisposable
         void OnCameraControlXbox(InputAction.CallbackContext context);
         void OnDetectControllerXboxLeftStick(InputAction.CallbackContext context);
         void OnDetectKeyboadAD(InputAction.CallbackContext context);
+        void OnLB(InputAction.CallbackContext context);
+        void OnRB(InputAction.CallbackContext context);
     }
     public interface IWizardAndKnightActions
     {

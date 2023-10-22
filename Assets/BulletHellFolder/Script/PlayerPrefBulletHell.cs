@@ -9,6 +9,7 @@ public class PlayerPrefBulletHell : MonoBehaviour
     public SavePlayerPrefBulletHell plPref;
     public GameManagerBulletHell gamemanager;
     public InputField texBox;
+    public Text nameBox;
     private bool doOnce = true;
 
     private void Start()
@@ -17,7 +18,8 @@ public class PlayerPrefBulletHell : MonoBehaviour
     }
     public void clickSaveButton()
     {
-        if (doOnce)
+        Debug.Log("nameBox = " + nameBox.text);
+        if (doOnce && nameBox.text != "")
         {
             doOnce = false;
             if (PlayerPrefs.GetString("ScoreBullet") == "")
@@ -34,6 +36,11 @@ public class PlayerPrefBulletHell : MonoBehaviour
             plPref.SetPreft();
         }
 
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void SetScorePref()

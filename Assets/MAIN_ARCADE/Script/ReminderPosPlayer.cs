@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class ReminderPosPlayer : MonoBehaviour
     public static ReminderPosPlayer instance;
     public ReminderPosPlayer otherReminderPosPlayer;
     public  Vector3 playerPos;
+    public bool _IsKeyboard { get; set; }
     public void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -19,6 +21,13 @@ public class ReminderPosPlayer : MonoBehaviour
     {
         playerRef = Instantiate(player, playerPos, Quaternion.identity);
     }
+
+    private void Update()
+    {
+//Debug.Log("_IsKeyboard = " + _IsKeyboard);
+
+    }
+
     public ReminderPosPlayer MakeSingleton()
     {
         if (instance == null)

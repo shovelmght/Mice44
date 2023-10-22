@@ -26,6 +26,7 @@ public class EnnemyAim : Ennemy
         canon1.transform.rotation = Quaternion.EulerAngles(0, 0, rz);
         canon2.transform.rotation = Quaternion.EulerAngles(0, rot, rz);
         StartCoroutine(DelayToStopAndAim());
+        Invoke(nameof(DestroyShip), 30);
     }
 
     public override void Update()

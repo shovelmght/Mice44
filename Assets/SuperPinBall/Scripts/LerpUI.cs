@@ -36,7 +36,7 @@ public class LerpUI : MonoBehaviour
 
     public IEnumerator RevertLerp(bool isBlackScreen)
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(0.5f);
         float timeElapsed = 0;
         while (timeElapsed < lerpDuration)
         {

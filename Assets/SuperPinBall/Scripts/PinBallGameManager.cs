@@ -467,7 +467,7 @@ public class PinBallGameManager : MonoBehaviour
         screenBlack.SetActive(true);
         isChangingScene = true;
         StartCoroutine(musicManager.FadeOut());
-        yield return new WaitForSeconds(delayLerp);
+        yield return new WaitForSeconds(0);
 
         StartCoroutine(blackScreen.Lerp(true));
         while (!blackScreen.LerpIsEnd())
@@ -485,7 +485,7 @@ public class PinBallGameManager : MonoBehaviour
         PlayerPrefs.SetString("ScoreManager", GetScore().ToString());
         newScore = true;
         StartCoroutine(uiSnewScore.Lerp(false));
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0);
         StartCoroutine(ChangeScene("Score Scene"));
     }
 }
